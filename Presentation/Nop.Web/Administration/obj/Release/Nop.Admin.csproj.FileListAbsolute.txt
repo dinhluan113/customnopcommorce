@@ -1,0 +1,9 @@
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\Nop.Admin.dll.config
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\Nop.Admin.dll
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\Nop.Admin.pdb
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.csproj.App.config
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.csprojAssemblyReference.cache
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.csproj.CoreCompileInputs.cache
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.csproj.CopyComplete
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.dll
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\Administration\obj\Release\Nop.Admin.pdb
