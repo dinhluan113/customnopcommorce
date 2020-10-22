@@ -28,11 +28,9 @@ namespace Nop.Plugin.Api
         public void Configuration(IAppBuilder app)
         {
             // uncomment only if the client is an angular application that directly calls the oauth endpoint
-            //app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
             ConfigureOAuth(app);
-
-            app.UseCors(CorsOptions.AllowAll);
 
             app.UseStageMarker(PipelineStage.PostAuthenticate);
 
@@ -55,9 +53,6 @@ namespace Nop.Plugin.Api
             };
             app.UseOAuthAuthorizationServer(oAuthServerOptions);
 
-            app.UseCors(CorsOptions.AllowAll);
-
-
             // Our own middleware that resets the current user set by the Forms authentication in case we have a Bearer token request
             app.Use(typeof(BearerTokenMiddleware));
 
@@ -67,7 +62,6 @@ namespace Nop.Plugin.Api
 
         private void ConfigureWebApi(IAppBuilder app)
         {
-            app.UseCors(CorsOptions.AllowAll);
             var config = new HttpConfiguration();
 
             config.Filters.Add(new ServerErrorHandlerAttribute());
@@ -483,8 +477,6 @@ namespace Nop.Plugin.Api
                 });
 
             app.UseWebApi(config);
-
-            app.UseCors(CorsOptions.AllowAll);
 
             config.DependencyResolver = new AutofacWebApiDependencyResolver(EngineContext.Current.ContainerManager.Container);
 

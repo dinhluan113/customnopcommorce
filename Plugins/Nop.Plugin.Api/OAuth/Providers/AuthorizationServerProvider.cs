@@ -56,6 +56,7 @@ namespace Nop.Plugin.Api.Owin.OAuth.Providers
                         if (client.IsActive)
                         {
                             context.OwinContext.Set("oauth:client", client);
+                            //context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
                             context.Validated(clientId);
                         }
                     }

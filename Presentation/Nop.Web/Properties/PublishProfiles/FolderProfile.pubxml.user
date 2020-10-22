@@ -4991,10 +4991,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/14/2017 18:09:22</publishTime>
     </File>
     <File Include="bin/Nop.Admin.dll">
-      <publishTime>10/22/2020 17:21:39</publishTime>
+      <publishTime>10/22/2020 17:56:24</publishTime>
     </File>
     <File Include="bin/Nop.Admin.pdb">
-      <publishTime>10/22/2020 17:21:39</publishTime>
+      <publishTime>10/22/2020 17:56:24</publishTime>
     </File>
     <File Include="bin/Nop.Core.dll">
       <publishTime>10/21/2020 16:46:57</publishTime>
@@ -5027,7 +5027,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2020 17:04:26</publishTime>
     </File>
     <File Include="bin/Nop.Web.dll">
-      <publishTime>10/22/2020 17:22:13</publishTime>
+      <publishTime>10/22/2020 17:58:37</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll">
       <publishTime>10/22/2020 17:04:27</publishTime>
@@ -5039,7 +5039,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2020 17:04:27</publishTime>
     </File>
     <File Include="bin/Nop.Web.pdb">
-      <publishTime>10/22/2020 17:22:13</publishTime>
+      <publishTime>10/22/2020 17:58:37</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>12/06/2016 17:09:53</publishTime>
@@ -6638,19 +6638,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:19</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll">
-      <publishTime>10/22/2020 17:21:45</publishTime>
+      <publishTime>10/22/2020 17:56:26</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll.config">
-      <publishTime>10/22/2020 16:58:00</publishTime>
+      <publishTime>10/22/2020 17:46:41</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.pdb">
-      <publishTime>10/22/2020 17:21:45</publishTime>
+      <publishTime>10/22/2020 17:56:26</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.XML">
-      <publishTime>10/22/2020 17:21:45</publishTime>
+      <publishTime>10/22/2020 17:56:26</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Swashbuckle.Core.dll">
       <publishTime>02/24/2016 12:21:04</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Net.Http.Formatting.xml">
+      <publishTime>11/28/2018 13:00:36</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Threading.Tasks.Dataflow.dll">
       <publishTime>11/07/2014 18:43:56</publishTime>
@@ -6660,6 +6666,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Web.Cors.dll">
       <publishTime>10/01/2013 20:54:22</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Web.Http.Cors.xml">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/System.Web.Http.xml">
+      <publishTime>11/28/2018 13:01:00</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/ClientSettings.cshtml">
       <publishTime>10/22/2020 13:27:26</publishTime>
