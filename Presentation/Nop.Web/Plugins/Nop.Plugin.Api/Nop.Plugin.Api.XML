@@ -153,6 +153,14 @@
             <response code="400">Bad Request</response>
             <response code="401">Unauthorized</response>
         </member>
+        <member name="M:Nop.Plugin.Api.Controllers.CategoriesController.GetCategoriesTop(Nop.Plugin.Api.Models.CategoriesParameters.CategoriesParametersModel)">
+            <summary>
+            Receive a list of all Categories TOP
+            </summary>
+            <response code="200">OK</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+        </member>
         <member name="M:Nop.Plugin.Api.Controllers.CategoriesController.GetCategoriesCount(Nop.Plugin.Api.Models.CategoriesParameters.CategoriesCountParametersModel)">
             <summary>
             Receive a count of all Categories
@@ -532,6 +540,11 @@
         <member name="P:Nop.Plugin.Api.DTOs.Categories.CategoryDto.UpdatedOnUtc">
             <summary>
             Gets or sets the date and time of instance update
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Categories.CategoryDto.arrSubCate">
+            <summary>
+            Array Sub Cate
             </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.OrderItems.OrderItemDto.Id">

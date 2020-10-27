@@ -147,6 +147,11 @@ namespace Nop.Plugin.Api.DTOs.Categories
         [JsonProperty("updated_on_utc")]
         public DateTime? UpdatedOnUtc { get; set; }
 
+        /// <summary>
+        /// Array Sub Cate
+        /// </summary>
+        public List<CategoryDto> arrSubCate { get; set; }
+
         [JsonProperty("role_ids")]
         public List<int> RoleIds
         {

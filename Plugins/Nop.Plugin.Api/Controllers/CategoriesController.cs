@@ -109,6 +109,61 @@ namespace Nop.Plugin.Api.Controllers
             return new RawJsonActionResult(json);
         }
 
+
+        /// <summary>
+        /// Receive a list of all Categories TOP
+        /// </summary>
+        /// <response code="200">OK</response>
+        /// <response code="400">Bad Request</response>
+        /// <response code="401">Unauthorized</response>
+        [HttpGet]
+        [ResponseType(typeof(CategoriesRootObject))]
+        [GetRequestsErrorInterceptorActionFilter]
+        public IHttpActionResult GetCategoriesTop(CategoriesParametersModel parameters)
+        {
+            if (parameters.Limit < Configurations.MinLimit || parameters.Limit > Configurations.MaxLimit)
+            {
+                return Error(HttpStatusCode.BadRequest, "limit", "Invalid limit parameter");
+            }
+
+            if (parameters.Page < Configurations.DefaultPageValue)
+            {
+                return Error(HttpStatusCode.BadRequest, "page", "Invalid page parameter");
+            }
+
+            var allCategories = _categoryApiService.GetCategories(parameters.Ids, parameters.CreatedAtMin, parameters.CreatedAtMax,
+                                                                             parameters.UpdatedAtMin, parameters.UpdatedAtMax,
+                                                                             parameters.Limit, parameters.Page, parameters.SinceId,
+                                                                             parameters.ProductId, parameters.PublishedStatus)
+                                                   .Where(c => c.ParentCategoryId == 0 && _storeMappingService.Authorize(c));
+
+            IList<CategoryDto> categoriesAsDtos = allCategories.Select(category =>
+            {
+                return _dtoHelper.PrepareCategoryDTO(category);
+
+            }).ToList();
+
+
+            foreach (var cate in categoriesAsDtos)
+            {
+                var arrSubCate = _categoryApiService.GetCategories().Where(c => c.ParentCategoryId == int.Parse(cate.Id)).ToList();
+                cate.arrSubCate = arrSubCate.Select(category =>
+                {
+                    return _dtoHelper.PrepareCategoryDTO(category);
+                }).ToList();
+            }
+
+            var categoriesRootObject = new CategoriesRootObject()
+            {
+                Categories = categoriesAsDtos
+            };
+
+            var json = _jsonFieldsSerializer.Serialize(categoriesRootObject, parameters.Fields);
+
+            return new RawJsonActionResult(json);
+        }
+
+
         /// <summary>
         /// Receive a count of all Categories
         /// </summary>

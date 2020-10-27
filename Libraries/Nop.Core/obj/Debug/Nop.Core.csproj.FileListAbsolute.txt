@@ -25,8 +25,8 @@ E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\bin\Debug\System.Web.Razor
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\bin\Debug\System.Web.WebPages.xml
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\bin\Debug\System.Web.WebPages.Razor.xml
-E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.csprojAssemblyReference.cache
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.csproj.CoreCompileInputs.cache
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.csproj.CopyComplete
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.dll
 E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.pdb
+E:\Project\nopCommerce_3.90_Source\Libraries\Nop.Core\obj\Debug\Nop.Core.csprojAssemblyReference.cache
