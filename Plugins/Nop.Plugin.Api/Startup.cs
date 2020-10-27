@@ -465,7 +465,7 @@ namespace Nop.Plugin.Api
 
             // The default route templates for the Swagger docs and swagger-ui are "swagger/docs/{apiVersion}" and "swagger/ui/index#/{assetPath}" respectively.
             config
-                .EnableSwagger(c =>
+                .EnableSwagger("/cms/swagger/docs/{apiVersion}", c =>
                 {
                     c.SingleApiVersion("v1", "RESTful API documentation");
                     c.IncludeXmlComments(string.Format(@"{0}\Plugins\Nop.Plugin.Api\Nop.Plugin.Api.XML", AppDomain.CurrentDomain.BaseDirectory));
@@ -478,7 +478,6 @@ namespace Nop.Plugin.Api
                 {
                     var currentAssembly = Assembly.GetAssembly(this.GetType());
                     var currentAssemblyName = currentAssembly.GetName().Name;
-
                     // Needeed for removing the "Try It Out" button from the post and put methods.
                     // http://stackoverflow.com/questions/36772032/swagger-5-2-3-supportedsubmitmethods-removed/36780806#36780806
                     c.InjectJavaScript(currentAssembly, string.Format("{0}.Scripts.swaggerPostPutTryItOutButtonsRemoval.js", currentAssemblyName));
