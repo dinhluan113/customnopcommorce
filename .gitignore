@@ -1,1 +1,4 @@
 /packages
+/Presentation/Nop.Web/obj
+/Presentation/Nop.Web/bin
+/Presentation/Nop.Web/Administration/obj
