@@ -42,7 +42,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class OrdersController : BaseApiController
     {
         private readonly IOrderApiService _orderApiService;
@@ -232,6 +231,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(OrdersRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateOrder([ModelBinder(typeof(JsonModelBinder<OrderDto>))] Delta<OrderDto> orderDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -341,6 +341,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteOrder(int id)
         {
             if (id <= 0)
@@ -365,6 +366,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(OrdersRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateOrder([ModelBinder(typeof(JsonModelBinder<OrderDto>))] Delta<OrderDto> orderDelta)
         {
             // Here we display the errors if the validation has failed at some point.

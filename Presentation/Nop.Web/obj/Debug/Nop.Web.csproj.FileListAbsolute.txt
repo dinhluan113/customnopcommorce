@@ -35,7 +35,9 @@ E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Net.Http.Exte
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Net.Http.Formatting.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Net.Http.Primitives.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Spatial.dll
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Cors.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Helpers.dll
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Cors.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Owin.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.WebHost.dll
@@ -91,6 +93,7 @@ E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Net.Http.Prim
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Spatial.xml
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Helpers.xml
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.xml
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Cors.xml
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Owin.xml
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.WebHost.xml
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Mvc.xml
@@ -163,6 +166,3 @@ E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\obj\Debug\Nop.Web.csproj
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\obj\Debug\Nop.Web.csproj.CopyComplete
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\obj\Debug\Nop.Web.dll
 E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\obj\Debug\Nop.Web.pdb
-E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Cors.dll
-E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Cors.dll
-E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web\bin\System.Web.Http.Cors.xml

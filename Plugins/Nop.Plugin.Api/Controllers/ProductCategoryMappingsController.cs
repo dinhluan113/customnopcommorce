@@ -26,7 +26,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class ProductCategoryMappingsController : BaseApiController
     {
         private readonly IProductCategoryMappingsApiService _productCategoryMappingsService;
@@ -159,6 +158,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(ProductCategoryMappingsRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateProductCategoryMapping([ModelBinder(typeof(JsonModelBinder<ProductCategoryMappingDto>))] Delta<ProductCategoryMappingDto> productCategoryDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -209,6 +209,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(ProductCategoryMappingsRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateProductCategoryMapping([ModelBinder(typeof(JsonModelBinder<ProductCategoryMappingDto>))] Delta<ProductCategoryMappingDto> productCategoryDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -266,6 +267,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteProductCategoryMapping(int id)
         {
             if (id <= 0)

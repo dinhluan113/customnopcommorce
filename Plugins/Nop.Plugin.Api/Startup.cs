@@ -30,9 +30,9 @@ namespace Nop.Plugin.Api
             // uncomment only if the client is an angular application that directly calls the oauth endpoint
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
-            ConfigureOAuth(app);
+            //ConfigureOAuth(app);
 
-            app.UseStageMarker(PipelineStage.PostAuthenticate);
+            //app.UseStageMarker(PipelineStage.PostAuthenticate);
 
             ConfigureWebApi(app);
         }
@@ -71,6 +71,7 @@ namespace Nop.Plugin.Api
                 NullValueHandling = NullValueHandling.Ignore
             };
 
+            #region route
             config.Routes.MapHttpRoute(
                 name: "authorizeApi",
                 routeTemplate: "OAuth/Authorize",
@@ -454,6 +455,7 @@ namespace Nop.Plugin.Api
                routeTemplate: "api/webhooks/filters",
                defaults: new { controller = "WebHookFilters", action = "GetWebHookFilters" },
                constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
+            #endregion route
 
             // The default route templates for the Swagger docs and swagger-ui are "swagger/docs/{apiVersion}" and "swagger/ui/index#/{assetPath}" respectively.
             config

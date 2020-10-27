@@ -4991,10 +4991,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/14/2017 18:09:22</publishTime>
     </File>
     <File Include="bin/Nop.Admin.dll">
-      <publishTime>10/22/2020 17:56:24</publishTime>
+      <publishTime>10/27/2020 13:03:11</publishTime>
     </File>
     <File Include="bin/Nop.Admin.pdb">
-      <publishTime>10/22/2020 17:56:24</publishTime>
+      <publishTime>10/27/2020 13:03:11</publishTime>
     </File>
     <File Include="bin/Nop.Core.dll">
       <publishTime>10/21/2020 16:46:57</publishTime>
@@ -5006,40 +5006,40 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/21/2020 16:46:57</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll">
-      <publishTime>10/22/2020 17:04:16</publishTime>
+      <publishTime>10/27/2020 11:31:37</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll.config">
       <publishTime>10/22/2020 14:12:40</publishTime>
     </File>
     <File Include="bin/Nop.Data.pdb">
-      <publishTime>10/22/2020 17:04:16</publishTime>
+      <publishTime>10/27/2020 11:31:37</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll">
-      <publishTime>10/22/2020 17:04:22</publishTime>
+      <publishTime>10/27/2020 11:31:46</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll.config">
-      <publishTime>10/22/2020 17:04:16</publishTime>
+      <publishTime>10/27/2020 11:31:38</publishTime>
     </File>
     <File Include="bin/Nop.Services.pdb">
-      <publishTime>10/22/2020 17:04:22</publishTime>
+      <publishTime>10/27/2020 11:31:46</publishTime>
     </File>
     <File Include="bin/Nop.Services.XmlSerializers.dll">
-      <publishTime>10/22/2020 17:04:26</publishTime>
+      <publishTime>10/27/2020 11:31:52</publishTime>
     </File>
     <File Include="bin/Nop.Web.dll">
-      <publishTime>10/22/2020 17:58:37</publishTime>
+      <publishTime>10/27/2020 13:03:28</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll">
-      <publishTime>10/22/2020 17:04:27</publishTime>
+      <publishTime>10/27/2020 11:31:55</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll.config">
-      <publishTime>10/22/2020 17:04:26</publishTime>
+      <publishTime>10/27/2020 11:31:52</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.pdb">
-      <publishTime>10/22/2020 17:04:27</publishTime>
+      <publishTime>10/27/2020 11:31:55</publishTime>
     </File>
     <File Include="bin/Nop.Web.pdb">
-      <publishTime>10/22/2020 17:58:37</publishTime>
+      <publishTime>10/27/2020 13:03:28</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>12/06/2016 17:09:53</publishTime>
@@ -5108,13 +5108,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/14/2017 18:09:25</publishTime>
     </File>
     <File Include="bin/System.Web.Cors.dll">
-      <publishTime>11/28/2018 12:58:44</publishTime>
+      <publishTime>10/01/2013 20:54:22</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>02/10/2015 19:24:19</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Cors.dll">
-      <publishTime>11/28/2018 13:01:26</publishTime>
+      <publishTime>10/01/2013 20:54:24</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
       <publishTime>11/28/2018 13:01:00</publishTime>
@@ -6323,7 +6323,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:03</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>03/25/2017 10:28:02</publishTime>
+      <publishTime>10/27/2020 10:39:28</publishTime>
     </File>
     <File Include="Plugins/bin/Index.htm">
       <publishTime>02/10/2015 19:24:03</publishTime>
@@ -6490,6 +6490,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Plugins/Feed.GoogleShopping/web.config">
       <publishTime>03/14/2017 18:09:10</publishTime>
     </File>
+    <File Include="Plugins/Nop.Plugin.Api.zip">
+      <publishTime>10/27/2020 12:23:41</publishTime>
+    </File>
     <File Include="Plugins/Nop.Plugin.Api/Autofac.Integration.WebApi.dll">
       <publishTime>08/17/2016 15:31:18</publishTime>
     </File>
@@ -6638,16 +6641,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:19</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll">
-      <publishTime>10/22/2020 17:56:26</publishTime>
+      <publishTime>10/27/2020 12:36:35</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll.config">
-      <publishTime>10/22/2020 17:46:41</publishTime>
+      <publishTime>10/27/2020 10:58:43</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.pdb">
-      <publishTime>10/22/2020 17:56:26</publishTime>
+      <publishTime>10/27/2020 12:36:35</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.XML">
-      <publishTime>10/22/2020 17:56:26</publishTime>
+      <publishTime>10/27/2020 12:36:35</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Swashbuckle.Core.dll">
       <publishTime>02/24/2016 12:21:04</publishTime>
@@ -8000,7 +8003,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/22/2020 14:35:58</publishTime>
+      <publishTime>10/27/2020 11:32:10</publishTime>
     </File>
   </ItemGroup>
 </Project>

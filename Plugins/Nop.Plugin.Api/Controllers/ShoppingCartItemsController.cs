@@ -33,7 +33,6 @@ using Nop.Core;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class ShoppingCartItemsController : BaseApiController
     {
         private readonly IShoppingCartItemApiService _shoppingCartItemApiService;
@@ -179,6 +178,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(ShoppingCartItemsRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateShoppingCartItem([ModelBinder(typeof(JsonModelBinder<ShoppingCartItemDto>))] Delta<ShoppingCartItemDto> shoppingCartItemDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -250,6 +250,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(ShoppingCartItemsRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateShoppingCartItem([ModelBinder(typeof(JsonModelBinder<ShoppingCartItemDto>))] Delta<ShoppingCartItemDto> shoppingCartItemDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -314,6 +315,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteShoppingCartItem(int id)
         {
             if (id <= 0)

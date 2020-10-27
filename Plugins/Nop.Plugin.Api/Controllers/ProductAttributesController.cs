@@ -26,7 +26,6 @@ using System.Web.Http.ModelBinding;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class ProductAttributesController : BaseApiController
     {
         private readonly IProductAttributeService _productAttributeService;
@@ -148,6 +147,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(ProductAttributesRootObjectDto))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateProductAttribute([ModelBinder(typeof(JsonModelBinder<ProductAttributeDto>))] Delta<ProductAttributeDto> productAttributeDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -179,6 +179,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(ProductAttributesRootObjectDto))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateProductAttribute([ModelBinder(typeof(JsonModelBinder<ProductAttributeDto>))] Delta<ProductAttributeDto> productAttributeDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -219,6 +220,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteProductAttribute(int id)
         {
             if (id <= 0)

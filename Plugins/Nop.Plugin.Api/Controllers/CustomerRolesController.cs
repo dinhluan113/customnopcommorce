@@ -22,7 +22,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class CustomerRolesController : BaseApiController
     {
         public CustomerRolesController(

@@ -33,7 +33,6 @@ using Nop.Plugin.Api.Helpers;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class ProductsController : BaseApiController
     {
         private readonly IStoreContext _storeContext;
@@ -179,6 +178,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(ProductsRootObjectDto))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateProduct([ModelBinder(typeof(JsonModelBinder<ProductDto>))] Delta<ProductDto> productDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -230,6 +230,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(ProductsRootObjectDto))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateProduct([ModelBinder(typeof(JsonModelBinder<ProductDto>))] Delta<ProductDto> productDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -295,6 +296,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteProduct(int id)
         {
             if (id <= 0)

@@ -24,7 +24,6 @@ using Nop.Services.Media;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class WebHookRegistrationsController : BaseApiController
     {
 
@@ -170,6 +169,7 @@ namespace Nop.Plugin.Api.Controllers
         /// <param name="id">The WebHook ID.</param>
         /// <param name="webHook">The new <see cref="WebHook"/> to use.</param>
         [HttpPut]
+        [BearerTokenAuthorize]
         public async Task<IHttpActionResult> UpdateWebHook(string id, WebHook webHook)
         {
             if (webHook == null)
@@ -204,6 +204,7 @@ namespace Nop.Plugin.Api.Controllers
         /// </summary>
         /// <param name="id">The WebHook ID.</param>
         [HttpDelete]
+        [BearerTokenAuthorize]
         public async Task<IHttpActionResult> DeleteWebHook(string id)
         {
             string userId = GetUserId();
@@ -226,6 +227,7 @@ namespace Nop.Plugin.Api.Controllers
         /// Deletes all existing WebHook registrations.
         /// </summary>
         [HttpDelete]
+        [BearerTokenAuthorize]
         public async Task<IHttpActionResult> DeleteAllWebHooks()
         {
             string userId = GetUserId();

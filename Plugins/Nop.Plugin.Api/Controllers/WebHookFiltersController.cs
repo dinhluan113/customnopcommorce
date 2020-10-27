@@ -18,7 +18,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class WebHookFiltersController : BaseApiController
     {
         public WebHookFiltersController(IJsonFieldsSerializer jsonFieldsSerializer,

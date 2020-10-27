@@ -33,7 +33,7 @@ using Nop.Plugin.Api.Helpers;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
+    //[BearerTokenAuthorize]
     public class CategoriesController : BaseApiController
     {
         private readonly ICategoryApiService _categoryApiService;
@@ -169,6 +169,7 @@ namespace Nop.Plugin.Api.Controllers
         
         [HttpPost]
         [ResponseType(typeof(CategoriesRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateCategory([ModelBinder(typeof(JsonModelBinder<CategoryDto>))] Delta<CategoryDto> categoryDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -229,6 +230,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPut]
         [ResponseType(typeof(CategoriesRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateCategory(
             [ModelBinder(typeof (JsonModelBinder<CategoryDto>))] Delta<CategoryDto> categoryDelta)
         {
@@ -287,6 +289,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteCategory(int id)
         {
             if (id <= 0)

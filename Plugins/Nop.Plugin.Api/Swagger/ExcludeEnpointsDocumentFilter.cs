@@ -8,6 +8,7 @@ namespace Nop.Plugin.Api.Swagger
         public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
         {
             swaggerDoc.paths.Remove("/OAuth/Authorize");
+            swaggerDoc.paths.Remove("/api");
         }
     }
 }

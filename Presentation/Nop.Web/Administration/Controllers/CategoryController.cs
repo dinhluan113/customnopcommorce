@@ -383,7 +383,7 @@ namespace Nop.Admin.Controllers
                 category.UpdatedOnUtc = DateTime.UtcNow;
                 _categoryService.InsertCategory(category);
                 //search engine name
-                model.SeName = category.ValidateSeName(model.SeName, category.Name, true);
+                model.SeName = category.ValidateSeName(model.SeName, category.Name, true).ToURL();
                 _urlRecordService.SaveSlug(category, model.SeName, 0);
                 //locales
                 UpdateLocales(category, model);
@@ -484,7 +484,7 @@ namespace Nop.Admin.Controllers
                 category.UpdatedOnUtc = DateTime.UtcNow;
                 _categoryService.UpdateCategory(category);
                 //search engine name
-                model.SeName = category.ValidateSeName(model.SeName, category.Name, true);
+                model.SeName = category.ValidateSeName(model.SeName, category.Name, true).ToURL();
                 _urlRecordService.SaveSlug(category, model.SeName, 0);
                 //locales
                 UpdateLocales(category, model);

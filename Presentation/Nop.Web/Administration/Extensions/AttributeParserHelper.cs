@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 using Nop.Core.Domain.Catalog;
 using Nop.Services.Common;
@@ -90,6 +92,47 @@ namespace Nop.Admin.Extensions
             }
 
             return attributesXml;
+        }
+
+        /// <summary>
+        /// Lấy dạng URL của một chuỗi bất kỳ
+        /// </summary>
+        /// <param name="phrase">Chuỗi cần chuyển thành URl</param>
+        /// <returns>Chuối dạng URL</returns>
+        public static string ToURL(this string phrase)
+        {
+            string str = phrase.ToUnsignedVietnamese().RemoveAccent().ToLower().Replace("°", "").Replace(":", "");
+            str = Regex.Replace(str, "&", " "); // invalid chars           
+            str = Regex.Replace(str, @"[^a-z0-9\s-/?:]", ""); // invalid chars           
+            str = Regex.Replace(str, @"\s+", " ").Trim(); // convert multiple spaces into one space   
+            str = str.Substring(0, str.Length <= 150 ? str.Length : 150).Trim(); // cut and trim it   
+            str = Regex.Replace(str, @"\s", "-"); // hyphens   
+
+            return str;
+        }
+
+        /// <summary>
+        /// Chuyển mãi về chuẩn ASCII để đảm bảo loại tất cả các dấu đặt biệt
+        /// </summary>
+        /// <param name="txt">Chuỗi cần chuyển</param>
+        /// <returns>Chuỗi đã mã hóa</returns>
+        public static string RemoveAccent(this string txt)
+        {
+            byte[] bytes = Encoding.GetEncoding("Cyrillic").GetBytes(txt);
+            return Encoding.ASCII.GetString(bytes).Replace("-", " ").Replace("/", " ");
+        }
+
+        /// <summary>
+        /// Bỏ dấu tiếng Việt của một chuỗi bất kỳ
+        /// </summary>
+        /// <param name="vietnamese">Chuỗi tiếng Việt cần bỏ dấu</param>
+        /// <returns>Chuỗi đã khử dấu</returns>
+        public static string ToUnsignedVietnamese(this string vietnamese)
+        {
+            if (vietnamese == null) return string.Empty;
+            Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
+            string temp = vietnamese.Normalize(NormalizationForm.FormD);
+            return regex.Replace(temp, string.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         }
     }
 }

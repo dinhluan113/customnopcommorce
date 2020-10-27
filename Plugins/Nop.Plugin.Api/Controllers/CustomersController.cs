@@ -35,7 +35,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class CustomersController : BaseApiController
     {
         private readonly ICustomerApiService _customerApiService;
@@ -215,6 +214,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpPost]
         [ResponseType(typeof(CustomersRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult CreateCustomer([ModelBinder(typeof(JsonModelBinder<CustomerDto>))] Delta<CustomerDto> customerDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -290,6 +290,7 @@ namespace Nop.Plugin.Api.Controllers
         
         [HttpPut]
         [ResponseType(typeof(CustomersRootObject))]
+        [BearerTokenAuthorize]
         public IHttpActionResult UpdateCustomer([ModelBinder(typeof(JsonModelBinder<CustomerDto>))] Delta<CustomerDto> customerDelta)
         {
             // Here we display the errors if the validation has failed at some point.
@@ -410,6 +411,7 @@ namespace Nop.Plugin.Api.Controllers
 
         [HttpDelete]
         [GetRequestsErrorInterceptorActionFilter]
+        [BearerTokenAuthorize]
         public IHttpActionResult DeleteCustomer(int id)
         {
             if (id <= 0)

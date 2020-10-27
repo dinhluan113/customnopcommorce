@@ -24,7 +24,6 @@ using Nop.Plugin.Api.Helpers;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class StoreController : BaseApiController
     {
         private IStoreContext _storeContext;

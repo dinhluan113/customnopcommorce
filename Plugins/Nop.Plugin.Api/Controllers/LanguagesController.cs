@@ -21,7 +21,6 @@ using Nop.Services.Stores;
 
 namespace Nop.Plugin.Api.Controllers
 {
-    [BearerTokenAuthorize]
     public class LanguagesController : BaseApiController
     {
         private ILanguageService _languageService;
