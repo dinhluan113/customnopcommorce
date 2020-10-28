@@ -15,6 +15,9 @@ namespace Nop.Plugin.Api.DTOs.Products
         [JsonProperty("products")]
         public IList<ProductDto> Products { get; set; }
 
+        [JsonProperty("total_pages")]
+        public int TotalPages { get; set; }
+
         public string GetPrimaryPropertyName()
         {
             return "products";

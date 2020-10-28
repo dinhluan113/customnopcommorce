@@ -88,9 +88,16 @@ namespace Nop.Plugin.Api.Controllers
                 return _dtoHelper.PrepareNewsDTO(c);
             }).ToList();
 
+            var total = _newsService.GetAllNews().Count;
+            var remain = total - (pageIndex + 1) * pageSize;
+            var remainPage = Math.Ceiling((double)(total / pageSize) / 10);
+
             var newsRootObject = new NewsRootObjectDto()
             {
-                News = newsAsDtos
+                News = newsAsDtos,
+                TotalItems = total,
+                RemainItems = remain,
+                TotalPages = Convert.ToInt32(remainPage) + 1
             };
 
             var json = _jsonFieldsSerializer.Serialize(newsRootObject, fields);

@@ -113,9 +113,14 @@ namespace Nop.Plugin.Api.Controllers
 
             }).ToList();
 
+            var total = _productApiService.GetProductsCount();
+            var remain = total - parameters.Page * parameters.Limit;
+            var remainPage = Math.Ceiling((double)(total / parameters.Limit) / 10);
+
             var productsRootObject = new ProductsRootObjectDto()
             {
-                Products = productsAsDtos
+                Products = productsAsDtos,
+                TotalPages = Convert.ToInt32(remainPage) + 1
             };
 
             var json = _jsonFieldsSerializer.Serialize(productsRootObject, parameters.Fields);

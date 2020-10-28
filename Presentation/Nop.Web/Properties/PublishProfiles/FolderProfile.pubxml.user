@@ -3734,7 +3734,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/27/2020 20:01:31</publishTime>
     </File>
     <File Include="Administration/Views/Category/_CreateOrUpdate.cshtml">
-      <publishTime>10/27/2020 20:01:31</publishTime>
+      <publishTime>10/28/2020 19:28:42</publishTime>
     </File>
     <File Include="Administration/Views/CheckoutAttribute/Create.cshtml">
       <publishTime>10/27/2020 20:01:31</publishTime>
@@ -4040,7 +4040,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/27/2020 20:01:33</publishTime>
     </File>
     <File Include="Administration/Views/News/_CreateOrUpdate.cshtml">
-      <publishTime>10/27/2020 20:01:33</publishTime>
+      <publishTime>10/28/2020 19:28:42</publishTime>
     </File>
     <File Include="Administration/Views/NewsLetterSubscription/List.cshtml">
       <publishTime>10/27/2020 20:01:33</publishTime>
@@ -4784,13 +4784,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2012 18:02:00</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>10/09/2013 16:29:20</publishTime>
+      <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>10/09/2013 16:29:20</publishTime>
+      <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Autofac.dll">
-      <publishTime>01/03/2017 16:36:14</publishTime>
+      <publishTime>03/01/2017 16:36:14</publishTime>
     </File>
     <File Include="bin/Autofac.Integration.Mvc.dll">
       <publishTime>01/29/2017 13:03:52</publishTime>
@@ -4808,25 +4808,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/de/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>02/03/2015 09:32:26</publishTime>
+      <publishTime>03/02/2015 09:32:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>02/03/2015 09:32:26</publishTime>
+      <publishTime>03/02/2015 09:32:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServerCompact.dll">
-      <publishTime>02/03/2015 09:32:22</publishTime>
+      <publishTime>03/02/2015 09:32:22</publishTime>
     </File>
     <File Include="bin/EPPlus.dll">
       <publishTime>07/14/2016 15:57:38</publishTime>
@@ -4835,16 +4835,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/es/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/es/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/es/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/fa/FluentValidation.resources.dll">
       <publishTime>03/03/2017 09:14:04</publishTime>
@@ -4868,16 +4868,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/fr/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/ImageResizer.dll">
       <publishTime>01/31/2016 20:15:04</publishTime>
@@ -4889,46 +4889,46 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/it/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/it/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/it/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/itextsharp.dll">
       <publishTime>10/10/2016 06:51:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/ja/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/ko/FluentValidation.resources.dll">
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/ko/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/MaxMind.Db.dll">
       <publishTime>11/22/2016 09:30:26</publishTime>
@@ -4937,16 +4937,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/22/2016 10:22:30</publishTime>
     </File>
     <File Include="bin/Microsoft.Azure.KeyVault.Core.dll">
-      <publishTime>07/12/2016 09:37:44</publishTime>
+      <publishTime>12/07/2016 09:37:44</publishTime>
     </File>
     <File Include="bin/Microsoft.Data.Edm.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Data.OData.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Data.Services.Client.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.dll">
       <publishTime>02/13/2015 13:16:30</publishTime>
@@ -4955,22 +4955,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/13/2015 13:16:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Threading.Tasks.dll">
-      <publishTime>07/04/2014 12:26:14</publishTime>
+      <publishTime>04/07/2014 12:26:14</publishTime>
     </File>
     <File Include="bin/Microsoft.Threading.Tasks.Extensions.Desktop.dll">
-      <publishTime>07/04/2014 12:26:14</publishTime>
+      <publishTime>04/07/2014 12:26:14</publishTime>
     </File>
     <File Include="bin/Microsoft.Threading.Tasks.Extensions.dll">
-      <publishTime>07/04/2014 12:26:14</publishTime>
+      <publishTime>04/07/2014 12:26:14</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.RedisSessionStateProvider.dll">
-      <publishTime>07/03/2017 00:00:32</publishTime>
+      <publishTime>03/07/2017 00:00:32</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.RedisSessionStateProvider.pdb">
-      <publishTime>07/03/2017 00:00:32</publishTime>
+      <publishTime>03/07/2017 00:00:32</publishTime>
     </File>
     <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
       <publishTime>02/23/2017 15:48:04</publishTime>
@@ -5000,55 +5000,55 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/Nop.Admin.dll">
-      <publishTime>10/27/2020 21:00:21</publishTime>
+      <publishTime>10/28/2020 20:28:14</publishTime>
     </File>
     <File Include="bin/Nop.Admin.pdb">
-      <publishTime>10/27/2020 21:00:21</publishTime>
+      <publishTime>10/28/2020 20:28:15</publishTime>
     </File>
     <File Include="bin/Nop.Core.dll">
-      <publishTime>10/27/2020 20:37:01</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Nop.Core.dll.config">
       <publishTime>10/27/2020 19:58:36</publishTime>
     </File>
     <File Include="bin/Nop.Core.pdb">
-      <publishTime>10/27/2020 20:37:01</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll">
-      <publishTime>10/27/2020 21:05:29</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll.config">
       <publishTime>10/27/2020 19:59:19</publishTime>
     </File>
     <File Include="bin/Nop.Data.pdb">
-      <publishTime>10/27/2020 21:05:29</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll">
-      <publishTime>10/27/2020 21:05:31</publishTime>
+      <publishTime>10/28/2020 21:05:02</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll.config">
-      <publishTime>10/27/2020 21:05:29</publishTime>
+      <publishTime>10/28/2020 21:05:01</publishTime>
     </File>
     <File Include="bin/Nop.Services.pdb">
-      <publishTime>10/27/2020 21:05:31</publishTime>
+      <publishTime>10/28/2020 21:05:02</publishTime>
     </File>
     <File Include="bin/Nop.Services.XmlSerializers.dll">
-      <publishTime>10/27/2020 21:05:32</publishTime>
+      <publishTime>10/28/2020 21:05:03</publishTime>
     </File>
     <File Include="bin/Nop.Web.dll">
-      <publishTime>10/27/2020 21:05:34</publishTime>
+      <publishTime>10/28/2020 21:05:05</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll">
-      <publishTime>10/27/2020 21:05:33</publishTime>
+      <publishTime>10/28/2020 21:05:04</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll.config">
-      <publishTime>10/27/2020 21:05:33</publishTime>
+      <publishTime>10/28/2020 21:05:04</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.pdb">
-      <publishTime>10/27/2020 21:05:33</publishTime>
+      <publishTime>10/28/2020 21:05:04</publishTime>
     </File>
     <File Include="bin/Nop.Web.pdb">
-      <publishTime>10/27/2020 21:05:34</publishTime>
+      <publishTime>10/28/2020 21:05:05</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>11/13/2012 12:19:34</publishTime>
@@ -5072,19 +5072,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:20</publishTime>
+      <publishTime>02/01/2017 14:00:20</publishTime>
     </File>
     <File Include="bin/ru/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/StackExchange.Redis.StrongName.dll">
-      <publishTime>03/02/2017 14:30:40</publishTime>
+      <publishTime>02/03/2017 14:30:40</publishTime>
     </File>
     <File Include="bin/sv/FluentValidation.resources.dll">
       <publishTime>03/03/2017 09:14:04</publishTime>
@@ -5102,7 +5102,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/19/2015 20:10:46</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>11/28/2018 13:00:36</publishTime>
+      <publishTime>01/28/2015 04:02:42</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Primitives.dll">
       <publishTime>02/19/2015 20:10:46</publishTime>
@@ -5114,19 +5114,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/13/2013 00:19:06</publishTime>
     </File>
     <File Include="bin/System.Spatial.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/System.Web.Cors.dll">
-      <publishTime>01/10/2013 20:54:22</publishTime>
+      <publishTime>10/01/2013 20:54:22</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Cors.dll">
-      <publishTime>01/10/2013 20:54:24</publishTime>
+      <publishTime>10/01/2013 20:54:24</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 04:02:54</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Owin.dll">
       <publishTime>01/28/2015 04:03:16</publishTime>
@@ -5138,7 +5138,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/28/2015 04:02:18</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>11/02/2014 15:26:04</publishTime>
+      <publishTime>02/11/2014 15:26:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>01/28/2015 04:02:32</publishTime>
@@ -5192,28 +5192,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/03/2017 09:14:04</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
-      <publishTime>01/02/2017 14:00:38</publishTime>
+      <publishTime>02/01/2017 14:00:38</publishTime>
     </File>
     <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
-      <publishTime>01/02/2017 14:00:22</publishTime>
+      <publishTime>02/01/2017 14:00:22</publishTime>
     </File>
     <File Include="bin/zh-Hant/Microsoft.Data.Services.Client.resources.dll">
-      <publishTime>01/02/2017 14:00:18</publishTime>
+      <publishTime>02/01/2017 14:00:18</publishTime>
     </File>
     <File Include="bin/zh-Hant/System.Spatial.resources.dll">
-      <publishTime>01/02/2017 14:00:14</publishTime>
+      <publishTime>02/01/2017 14:00:14</publishTime>
     </File>
     <File Include="Content/BBEditor/ed.js">
       <publishTime>10/27/2020 20:01:38</publishTime>
@@ -6509,28 +6509,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/17/2016 15:31:18</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Description.txt">
-      <publishTime>10/27/2020 20:01:48</publishTime>
+      <publishTime>10/27/2020 20:00:40</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/logo.jpg">
       <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Common.dll">
-      <publishTime>09/01/2017 13:04:38</publishTime>
+      <publishTime>01/09/2017 13:04:38</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Common.xml">
-      <publishTime>09/01/2017 13:01:00</publishTime>
+      <publishTime>01/09/2017 13:01:00</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Custom.dll">
-      <publishTime>09/01/2017 13:04:38</publishTime>
+      <publishTime>01/09/2017 13:04:38</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Custom.SqlStorage.dll">
-      <publishTime>09/01/2017 13:04:38</publishTime>
+      <publishTime>01/09/2017 13:04:38</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Custom.SqlStorage.xml">
-      <publishTime>09/01/2017 13:01:18</publishTime>
+      <publishTime>01/09/2017 13:01:18</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNet.WebHooks.Custom.xml">
-      <publishTime>09/01/2017 13:01:22</publishTime>
+      <publishTime>01/09/2017 13:01:22</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Microsoft.AspNetCore.Cryptography.Internal.dll">
       <publishTime>06/22/2016 09:14:52</publishTime>
@@ -6650,19 +6650,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/27/2020 20:01:49</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll">
-      <publishTime>10/27/2020 20:36:27</publishTime>
+      <publishTime>10/28/2020 20:28:15</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll.config">
       <publishTime>10/27/2020 20:22:19</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.pdb">
-      <publishTime>10/27/2020 20:36:27</publishTime>
+      <publishTime>10/28/2020 20:28:15</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.XML">
-      <publishTime>10/27/2020 20:36:27</publishTime>
+      <publishTime>10/28/2020 20:28:15</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Swashbuckle.Core.dll">
-      <publishTime>08/07/2017 01:30:56</publishTime>
+      <publishTime>07/08/2017 01:30:56</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Net.Http.Formatting.dll">
       <publishTime>01/28/2015 04:02:42</publishTime>
@@ -6671,13 +6671,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/28/2015 04:02:42</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Threading.Tasks.Dataflow.dll">
-      <publishTime>07/11/2014 18:43:56</publishTime>
+      <publishTime>11/07/2014 18:43:56</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Threading.Tasks.Dataflow.xml">
-      <publishTime>07/11/2014 18:43:56</publishTime>
+      <publishTime>11/07/2014 18:43:56</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Web.Cors.dll">
-      <publishTime>01/10/2013 20:54:22</publishTime>
+      <publishTime>10/01/2013 20:54:22</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/System.Web.Http.Cors.dll">
       <publishTime>10/27/2020 20:01:49</publishTime>
@@ -6692,28 +6692,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/28/2015 04:02:54</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/ClientSettings.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/Create.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/CreateOrUpdate.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/Edit.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/List.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Settings.cshtml">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/web.config">
-      <publishTime>10/27/2020 20:01:50</publishTime>
+      <publishTime>10/27/2020 20:00:52</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/WebActivatorEx.dll">
-      <publishTime>08/02/2013 16:42:28</publishTime>
+      <publishTime>02/08/2013 16:42:28</publishTime>
     </File>
     <File Include="Plugins/Payments.CheckMoneyOrder/Description.txt">
       <publishTime>10/27/2020 20:01:50</publishTime>
@@ -8012,7 +8012,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/27/2020 20:01:56</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/27/2020 21:05:36</publishTime>
+      <publishTime>10/28/2020 21:05:07</publishTime>
     </File>
   </ItemGroup>
 </Project>
