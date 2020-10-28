@@ -10,6 +10,7 @@ using Nop.Services.Events;
 using Nop.Services.Helpers;
 using Nop.Services.Localization;
 using Nop.Services.Logging;
+using Nop.Services.Media;
 using Nop.Services.News;
 using Nop.Services.Security;
 using Nop.Services.Seo;
@@ -30,6 +31,7 @@ namespace Nop.Admin.Controllers
         private readonly IDateTimeHelper _dateTimeHelper;
         private readonly IEventPublisher _eventPublisher;
         private readonly ILocalizationService _localizationService;
+        private readonly IPictureService _pictureService;
         private readonly IPermissionService _permissionService;
         private readonly IUrlRecordService _urlRecordService;
         private readonly IStoreService _storeService;
@@ -47,6 +49,7 @@ namespace Nop.Admin.Controllers
             ILocalizationService localizationService,
             IPermissionService permissionService,
             IUrlRecordService urlRecordService,
+            IPictureService pictureService,
             IStoreService storeService, 
             IStoreMappingService storeMappingService,
             ICustomerActivityService customerActivityService)
@@ -61,6 +64,7 @@ namespace Nop.Admin.Controllers
             this._storeService = storeService;
             this._storeMappingService = storeMappingService;
             this._customerActivityService = customerActivityService;
+            this._pictureService = pictureService;
         }
 
         #endregion
@@ -276,6 +280,12 @@ namespace Nop.Admin.Controllers
 
             if (ModelState.IsValid)
             {
+                // We need to insert the picture before the category so we can obtain the picture id and map it to the category.
+                //if (categoryDelta.Dto.Image != null && categoryDelta.Dto.Image.Binary != null)
+                //{
+                //    insertedPicture = _pictureService.InsertPicture(categoryDelta.Dto.Image.Binary, categoryDelta.Dto.Image.MimeType, string.Empty);
+                //}
+
                 newsItem = model.ToEntity(newsItem);
                 newsItem.StartDateUtc = model.StartDate;
                 newsItem.EndDateUtc = model.EndDate;

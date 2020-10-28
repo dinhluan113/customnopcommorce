@@ -28,6 +28,10 @@ using Nop.Services.Directory;
 using Nop.Services.Localization;
 using Nop.Plugin.Api.DTOs.ProductAttributes;
 using Nop.Plugin.Api.DTOs.OrderItems;
+using Nop.Plugin.Api.DTOs.Blogs;
+using Nop.Core.Domain.Blogs;
+using Nop.Plugin.Api.DTOs.News;
+using Nop.Core.Domain.News;
 
 namespace Nop.Plugin.Api.Helpers
 {
@@ -80,6 +84,8 @@ namespace Nop.Plugin.Api.Helpers
             PrepareProductImages(product.ProductPictures, productDto);
             PrepareProductAttributes(product.ProductAttributeMappings, productDto);
 
+            productDto.PriceFormat = productDto.Price.HasValue && productDto.Price.Value > 0 ? productDto.Price.Value.ToCurrency() : string.Empty;
+            productDto.OldPriceFormat = productDto.OldPrice.HasValue && productDto.OldPrice.Value > 0 ? productDto.OldPrice.Value.ToCurrency() : string.Empty;
             productDto.SeName = product.GetSeName();
             productDto.DiscountIds = product.AppliedDiscounts.Select(discount => discount.Id).ToList();
             productDto.ManufacturerIds = product.ProductManufacturers.Select(pm => pm.ManufacturerId).ToList();
@@ -108,6 +114,13 @@ namespace Nop.Plugin.Api.Helpers
             }
 
             return productDto;
+        }
+
+        public NewsDto PrepareNewsDTO(NewsItem news)
+        {
+            NewsDto newsDto = news.ToDto();
+            newsDto.Thumb = _pictureService.GetPictureUrl(news.PictureId);
+            return newsDto;
         }
 
         public CategoryDto PrepareCategoryDTO(Category category)

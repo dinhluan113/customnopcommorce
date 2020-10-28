@@ -1,9 +1,11 @@
 ﻿using Nop.Core.Domain.Catalog;
 using Nop.Core.Domain.Localization;
+using Nop.Core.Domain.News;
 using Nop.Core.Domain.Orders;
 using Nop.Core.Domain.Stores;
 using Nop.Plugin.Api.DTOs.Categories;
 using Nop.Plugin.Api.DTOs.Languages;
+using Nop.Plugin.Api.DTOs.News;
 using Nop.Plugin.Api.DTOs.OrderItems;
 using Nop.Plugin.Api.DTOs.Orders;
 using Nop.Plugin.Api.DTOs.ProductAttributes;
@@ -16,6 +18,7 @@ namespace Nop.Plugin.Api.Helpers
     public interface IDTOHelper
     {
         ProductDto PrepareProductDTO(Product product);
+        NewsDto PrepareNewsDTO(NewsItem news);
         CategoryDto PrepareCategoryDTO(Category category);
         OrderDto PrepareOrderDTO(Order order);
         ShoppingCartItemDto PrepareShoppingCartItemDTO(ShoppingCartItem shoppingCartItem);

@@ -57,6 +57,7 @@ namespace Nop.Plugin.Api.Infrastructure
             builder.RegisterType<CustomersController>().InstancePerLifetimeScope();
             builder.RegisterType<CategoriesController>().InstancePerLifetimeScope();
             builder.RegisterType<ProductsController>().InstancePerLifetimeScope();
+            builder.RegisterType<NewsController>().InstancePerLifetimeScope();
             builder.RegisterType<ProductAttributesController>().InstancePerLifetimeScope();
             builder.RegisterType<ProductCategoryMappingsController>().InstancePerLifetimeScope();
             builder.RegisterType<OrdersController>().InstancePerLifetimeScope();

@@ -295,6 +295,16 @@ namespace Nop.Services.Seo
             return regex.Replace(temp, string.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         }
 
+        /// <summary>
+        /// Chuyển một số về dạng tiền tệ
+        /// </summary>
+        /// <param name="number">Giá trị cần chuyển (int, decimal, double...)</param>
+        /// <returns>String dạng tiền tệ</returns>
+        public static string ToCurrency(this decimal number)
+        {
+            return string.Format("{0:#,#.##}₫", number);
+        }
+
 
         /// <summary>
         /// Get SE name

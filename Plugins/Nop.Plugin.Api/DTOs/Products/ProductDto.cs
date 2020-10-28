@@ -349,10 +349,20 @@ namespace Nop.Plugin.Api.DTOs.Products
         [JsonProperty("price")]
         public decimal? Price { get; set; }
         /// <summary>
+        /// Gets or sets the PriceFormat
+        /// </summary>
+        [JsonProperty("price_format")]
+        public string PriceFormat { get; set; }
+        /// <summary>
         /// Gets or sets the old price
         /// </summary>
         [JsonProperty("old_price")]
         public decimal? OldPrice { get; set; }
+        /// <summary>
+        /// Gets or sets the OldPriceFormat
+        /// </summary>
+        [JsonProperty("oldprice_format")]
+        public string OldPriceFormat { get; set; }
         /// <summary>
         /// Gets or sets the product cost
         /// </summary>

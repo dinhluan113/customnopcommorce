@@ -280,3 +280,4 @@ E:\Projects\customnopcommorce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.F
 E:\Projects\customnopcommorce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.csproj.CopyComplete
 E:\Projects\customnopcommorce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.dll
 E:\Projects\customnopcommorce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.pdb
+E:\Project\nopCommerce_3.90_Source\Presentation\Nop.Web.Framework\bin\Debug\Microsoft.WindowsAzure.Storage.pdb

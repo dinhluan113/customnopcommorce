@@ -91,5 +91,7 @@ namespace Nop.Core.Domain.News
         /// Gets or sets the language
         /// </summary>
         public virtual Language Language { get; set; }
+
+        public int PictureId { get; set; }
     }
 }

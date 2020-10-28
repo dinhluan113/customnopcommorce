@@ -61,6 +61,17 @@
             <response code="404">Not Found</response>
             <response code="401">Unauthorized</response>
         </member>
+        <member name="M:Nop.Plugin.Api.Controllers.NewsController.GetNews(System.Int32,System.Int32,System.String)">
+            <summary>
+            Retrieve all blog
+            </summary>
+            <param name="pageSize">size: 16</param>
+            <param name="pageIndex">index: 1</param>
+            <param name="fields">Fields from the product you want your json to contain</param>
+            <response code="200">OK</response>
+            <response code="404">Not Found</response>
+            <response code="401">Unauthorized</response>
+        </member>
         <member name="M:Nop.Plugin.Api.Controllers.StoreController.GetCurrentStore(System.String)">
             <summary>
             Retrieve category by spcified id
@@ -311,6 +322,56 @@
             <response code="400">Bad Request</response>
             <response code="404">Not Found</response>
             <response code="401">Unauthorized</response>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Title">
+            <summary>
+            Gets or sets the news title
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Short">
+            <summary>
+            Gets or sets the blog post body
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Full">
+            <summary>
+            Gets or sets the blog post overview. If specified, then it's used on the blog page instead of the "Body"
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.MetaKeywords">
+            <summary>
+            Gets or sets the meta keywords
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.MetaDescription">
+            <summary>
+            Gets or sets the meta description
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.MetaTitle">
+            <summary>
+            Gets or sets the meta title
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.CreatedOnUtc">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.URL">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Thumb">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.CustomerRoles.CustomerRoleDto.Id">
             <summary>
@@ -1054,9 +1115,19 @@
             Gets or sets the price
             </summary>
         </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Products.ProductDto.PriceFormat">
+            <summary>
+            Gets or sets the PriceFormat
+            </summary>
+        </member>
         <member name="P:Nop.Plugin.Api.DTOs.Products.ProductDto.OldPrice">
             <summary>
             Gets or sets the old price
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Products.ProductDto.OldPriceFormat">
+            <summary>
+            Gets or sets the OldPriceFormat
             </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.Products.ProductDto.ProductCost">

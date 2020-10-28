@@ -30,6 +30,8 @@ using Nop.Services.Security;
 using Nop.Services.Seo;
 using Nop.Services.Stores;
 using Nop.Plugin.Api.Helpers;
+using Nop.Services.Blogs;
+using Nop.Plugin.Api.DTOs.Blogs;
 
 namespace Nop.Plugin.Api.Controllers
 {
@@ -39,6 +41,7 @@ namespace Nop.Plugin.Api.Controllers
         private readonly IProductApiService _productApiService;
         private readonly IProductService _productService;
         private readonly IUrlRecordService _urlRecordService;
+        private readonly IBlogService _blogService;
         private readonly IPictureService _pictureService;
         private readonly IManufacturerService _manufacturerService;
         private readonly IFactory<Product> _factory;
@@ -49,6 +52,7 @@ namespace Nop.Plugin.Api.Controllers
         public ProductsController(IProductApiService productApiService,
                                   IJsonFieldsSerializer jsonFieldsSerializer,
                                   IProductService productService,
+                                  IBlogService blogService,
                                   IUrlRecordService urlRecordService,
                                   ICustomerActivityService customerActivityService,
                                   ILocalizationService localizationService,
@@ -70,6 +74,7 @@ namespace Nop.Plugin.Api.Controllers
             _productTagService = productTagService;
             _urlRecordService = urlRecordService;
             _productService = productService;
+            _blogService = blogService;
             _productAttributeService = productAttributeService;
             _dtoHelper = dtoHelper;
             _storeContext = storeContext;

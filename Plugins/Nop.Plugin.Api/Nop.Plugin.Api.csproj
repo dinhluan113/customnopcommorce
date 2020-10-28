@@ -244,6 +244,9 @@
     <Compile Include="Controllers\NewsLetterSubscriptionController.cs" />
     <Compile Include="Controllers\OrderItemsController.cs" />
     <Compile Include="Controllers\ProductAttributesController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="DTOs\News\NewsDto.cs" />
+    <Compile Include="DTOs\News\NewsRootObjectDto.cs" />
     <Compile Include="DTOs\CustomerRoles\CustomerRoleDto.cs" />
     <Compile Include="DTOs\CustomerRoles\CustomerRolesRootObject.cs" />
     <Compile Include="DTOs\Images\ImageMappingDto.cs" />
@@ -286,6 +289,7 @@
     <Compile Include="JSON\ActionResults\RawJsonActionResult.cs" />
     <Compile Include="MappingExtensions\CustomerRoleDtoMappings.cs" />
     <Compile Include="MappingExtensions\LanguageDtoMappings.cs" />
+    <Compile Include="MappingExtensions\NewsDtoMapping.cs" />
     <Compile Include="MappingExtensions\NewsLetterSubscriptoonDtoMappings.cs" />
     <Compile Include="MappingExtensions\ProductAttributeDtoMappings.cs" />
     <Compile Include="MappingExtensions\StoreDtoMappings.cs" />

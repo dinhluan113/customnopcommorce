@@ -461,11 +461,17 @@ namespace Nop.Plugin.Api
                routeTemplate: "api/webhooks/filters",
                defaults: new { controller = "WebHookFilters", action = "GetWebHookFilters" },
                constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
+
+            config.Routes.MapHttpRoute(
+               name: "getAllNews",
+               routeTemplate: "api/news",
+               defaults: new { controller = "News", action = "GetNews" },
+               constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
             #endregion route
 
             // The default route templates for the Swagger docs and swagger-ui are "swagger/docs/{apiVersion}" and "swagger/ui/index#/{assetPath}" respectively.
             config
-                .EnableSwagger("/cms/swagger/docs/{apiVersion}", c =>
+                .EnableSwagger("cms/swagger/docs/{apiVersion}", c =>
                 {
                     c.SingleApiVersion("v1", "RESTful API documentation");
                     c.IncludeXmlComments(string.Format(@"{0}\Plugins\Nop.Plugin.Api\Nop.Plugin.Api.XML", AppDomain.CurrentDomain.BaseDirectory));
