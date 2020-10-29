@@ -38,3 +38,5 @@
 /Tests/Nop.Services.Tests/obj
 /Tests/Nop.Services.Tests/bin
 /Tests/Nop.Web.MVC.Tests/obj
+/Tests/Nop.Tests/obj
+/Tests/Nop.Data.Tests/obj
