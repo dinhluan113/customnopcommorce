@@ -72,6 +72,16 @@
             <response code="404">Not Found</response>
             <response code="401">Unauthorized</response>
         </member>
+        <member name="M:Nop.Plugin.Api.Controllers.NewsController.GetNewsById(System.Int32,System.String)">
+            <summary>
+            Retrieve all news by id
+            </summary>
+            <param name="id">size: 16</param>
+            <param name="fields">Fields from the product you want your json to contain</param>
+            <response code="200">OK</response>
+            <response code="404">Not Found</response>
+            <response code="401">Unauthorized</response>
+        </member>
         <member name="M:Nop.Plugin.Api.Controllers.StoreController.GetCurrentStore(System.String)">
             <summary>
             Retrieve category by spcified id

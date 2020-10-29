@@ -104,5 +104,35 @@ namespace Nop.Plugin.Api.Controllers
 
             return new RawJsonActionResult(json);
         }
+
+        /// <summary>
+        /// Retrieve all news by id
+        /// </summary>
+        /// <param name="id">size: 16</param>
+        /// <param name="fields">Fields from the product you want your json to contain</param>
+        /// <response code="200">OK</response>
+        /// <response code="404">Not Found</response>
+        /// <response code="401">Unauthorized</response>
+        [HttpGet]
+        public IHttpActionResult GetNewsById(int id, string fields = "")
+        {
+            var news = _newsService.GetNewsById(id);
+
+            if (news == null)
+            {
+                return Error(HttpStatusCode.NotFound, "news", "not found");
+            }
+
+            var newsAsDtos = new List<NewsDto>() { _dtoHelper.PrepareNewsDTO(news) };
+
+            var newsRootObject = new NewsRootObjectDto()
+            {
+                News = newsAsDtos
+            };
+
+            var json = _jsonFieldsSerializer.Serialize(newsRootObject, fields);
+
+            return new RawJsonActionResult(json);
+        }
     }
 }
