@@ -213,6 +213,12 @@ namespace Nop.Plugin.Api.Controllers
 
             CategoryDto categoryDto = _dtoHelper.PrepareCategoryDTO(category);
 
+            if (categoryDto.ParentCategoryId.HasValue)
+            {
+                var prCate = _categoryApiService.GetCategories(new List<int> { categoryDto.ParentCategoryId.Value }).FirstOrDefault();
+                categoryDto.prCate = prCate != null ? new CategoryForBr() { id = prCate.Id, title = prCate.Name, url = prCate.GetSeName() + "-" + prCate.Id } : null; 
+            }
+
             var categoriesRootObject = new CategoriesRootObject();
 
             categoriesRootObject.Categories.Add(categoryDto);

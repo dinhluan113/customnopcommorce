@@ -24,6 +24,12 @@ namespace Nop.Plugin.Api.DTOs.Blogs
         [JsonProperty("total_pages")]
         public int TotalPages { get; set; }
 
+        /// <summary>
+        /// Gets or sets the date and time of entity creation
+        /// </summary>
+        [JsonProperty("related_news")]
+        public List<NewsDto> RelatedNews { get; set; }
+
         public string GetPrimaryPropertyName()
         {
             return "news";

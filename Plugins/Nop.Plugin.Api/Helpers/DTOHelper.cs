@@ -120,6 +120,7 @@ namespace Nop.Plugin.Api.Helpers
         {
             NewsDto newsDto = news.ToDto();
             newsDto.Thumb = _pictureService.GetPictureUrl(news.PictureId);
+            newsDto.CreatedFormat = newsDto.CreatedOnUtc.ToString("dd/MM/yyyy HH:mm:ss");
             return newsDto;
         }
 

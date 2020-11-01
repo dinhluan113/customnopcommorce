@@ -32,6 +32,7 @@ using Nop.Services.Stores;
 using Nop.Plugin.Api.Helpers;
 using Nop.Services.Blogs;
 using Nop.Plugin.Api.DTOs.Blogs;
+using Nop.Plugin.Api.MappingExtensions;
 
 namespace Nop.Plugin.Api.Controllers
 {
@@ -42,12 +43,14 @@ namespace Nop.Plugin.Api.Controllers
         private readonly IProductService _productService;
         private readonly IUrlRecordService _urlRecordService;
         private readonly IBlogService _blogService;
+        private readonly ICategoryService _categoryApiService;
         private readonly IPictureService _pictureService;
         private readonly IManufacturerService _manufacturerService;
         private readonly IFactory<Product> _factory;
         private readonly IProductTagService _productTagService;
         private readonly IProductAttributeService _productAttributeService;
         private readonly IDTOHelper _dtoHelper;
+        private readonly IProductCategoryMappingsApiService _productCategoryMappingsService;
 
         public ProductsController(IProductApiService productApiService,
                                   IJsonFieldsSerializer jsonFieldsSerializer,
@@ -55,9 +58,11 @@ namespace Nop.Plugin.Api.Controllers
                                   IBlogService blogService,
                                   IUrlRecordService urlRecordService,
                                   ICustomerActivityService customerActivityService,
+                                  IProductCategoryMappingsApiService productCategoryMappingsService,
                                   ILocalizationService localizationService,
                                   IFactory<Product> factory,
                                   IAclService aclService,
+                                  ICategoryService categoryApiService,
                                   IStoreMappingService storeMappingService,
                                   IStoreService storeService,
                                   ICustomerService customerService,
@@ -78,7 +83,9 @@ namespace Nop.Plugin.Api.Controllers
             _productAttributeService = productAttributeService;
             _dtoHelper = dtoHelper;
             _storeContext = storeContext;
+            _categoryApiService = categoryApiService;
             _pictureService = pictureService;
+            _productCategoryMappingsService = productCategoryMappingsService;
         }
 
         /// <summary>
@@ -177,9 +184,38 @@ namespace Nop.Plugin.Api.Controllers
 
             ProductDto productDto = _dtoHelper.PrepareProductDTO(product);
 
-            var productsRootObject = new ProductsRootObjectDto();
+            var mappingCateIds =
+                _productCategoryMappingsService.GetMappings(productId: id).Select(x => x.CategoryId);
 
-            productsRootObject.Products.Add(productDto);
+
+            var lstCate = new List<DTOs.Categories.CategoryForBr>();
+            var relatedProducts = new List<ProductDto>();
+            if (mappingCateIds != null && mappingCateIds.Count() > 0)
+            {
+                foreach (var cateId in mappingCateIds)
+                {
+                    Category category = _categoryApiService.GetCategoryById(cateId);
+                    lstCate.Add(new DTOs.Categories.CategoryForBr() { id = category.Id, title = category.Name, url = category.GetSeName() + "-" + category.Id });
+                }
+
+
+                var _relatedProducts = _productApiService.GetProducts(categoryId: mappingCateIds.First()).Where(c => c.Id != id);
+                if (_relatedProducts != null && _relatedProducts.Any())
+                {
+                    relatedProducts = _relatedProducts.Select(c =>
+                    {
+                        return _dtoHelper.PrepareProductDTO(c);
+                    }).ToList();
+                }
+            }
+
+
+            var productsRootObject = new ProductsRootObjectDto()
+            {
+                Products = new List<ProductDto>() { productDto },
+                CateDto = lstCate,
+                RelatedProducts = relatedProducts,
+            };
 
             var json = _jsonFieldsSerializer.Serialize(productsRootObject, fields);
 

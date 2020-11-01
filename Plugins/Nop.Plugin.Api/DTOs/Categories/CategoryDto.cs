@@ -152,6 +152,12 @@ namespace Nop.Plugin.Api.DTOs.Categories
         /// </summary>
         public List<CategoryDto> arrSubCate { get; set; }
 
+        /// <summary>
+        /// Array Pr Cate
+        /// </summary>
+        [JsonProperty("parent_category_dto")]
+        public CategoryForBr prCate { get; set; }
+
         [JsonProperty("role_ids")]
         public List<int> RoleIds
         {
@@ -205,5 +211,12 @@ namespace Nop.Plugin.Api.DTOs.Categories
 
         [JsonProperty("se_name")]
         public string SeName { get; set; }
+    }
+
+    public class CategoryForBr
+    {
+        public int id { get; set; }
+        public string title { get; set; }
+        public string url { get; set; }
     }
 }

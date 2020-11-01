@@ -373,12 +373,22 @@
             Gets or sets the date and time of entity creation
             </summary>
         </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.CreatedFormat">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
+        </member>
         <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.URL">
             <summary>
             Gets or sets the date and time of entity creation
             </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Thumb">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Blogs.NewsRootObjectDto.RelatedNews">
             <summary>
             Gets or sets the date and time of entity creation
             </summary>
@@ -616,6 +626,11 @@
         <member name="P:Nop.Plugin.Api.DTOs.Categories.CategoryDto.arrSubCate">
             <summary>
             Array Sub Cate
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Categories.CategoryDto.prCate">
+            <summary>
+            Array Pr Cate
             </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.OrderItems.OrderItemDto.Id">

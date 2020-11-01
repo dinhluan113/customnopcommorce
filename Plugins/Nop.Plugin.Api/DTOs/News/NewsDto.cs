@@ -64,6 +64,12 @@ namespace Nop.Plugin.Api.DTOs.News
         /// <summary>
         /// Gets or sets the date and time of entity creation
         /// </summary>
+        [JsonProperty("createddateformat")]
+        public string CreatedFormat { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date and time of entity creation
+        /// </summary>
         [JsonProperty("url")]
         public string URL { get; set; }
 

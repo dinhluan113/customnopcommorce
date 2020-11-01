@@ -125,9 +125,20 @@ namespace Nop.Plugin.Api.Controllers
 
             var newsAsDtos = new List<NewsDto>() { _dtoHelper.PrepareNewsDTO(news) };
 
+            List<NewsDto> RelatedNews = new List<NewsDto>();
+            var _RelatedNews = _newsService.GetAllNews(pageSize: 5, pageIndex: 0, showHidden: true).Where(c=>c.Id != news.Id);
+            if (_RelatedNews != null && _RelatedNews.Count() > 0)
+            {
+                RelatedNews = _RelatedNews.Select(c =>
+                {
+                    return _dtoHelper.PrepareNewsDTO(c);
+                }).ToList();
+            }
+
             var newsRootObject = new NewsRootObjectDto()
             {
-                News = newsAsDtos
+                News = newsAsDtos,
+                RelatedNews = RelatedNews
             };
 
             var json = _jsonFieldsSerializer.Serialize(newsRootObject, fields);
