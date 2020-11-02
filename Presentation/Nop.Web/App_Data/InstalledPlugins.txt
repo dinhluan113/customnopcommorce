@@ -7,7 +7,6 @@ Payments.PayPalDirect
 Payments.Manual
 Payments.PayPalStandard
 Payments.PurchaseOrder
-Pickup.PickupInStore
 PromotionFeed.Froogle
 Shipping.AustraliaPost
 Shipping.CanadaPost
@@ -18,3 +17,5 @@ Shipping.USPS
 Tax.FixedOrByCountryStateZip
 Widgets.GoogleAnalytics
 Widgets.NivoSlider
+Pickup.PickupInStore
+Nop.Plugin.Widgets.SliderAndPosition

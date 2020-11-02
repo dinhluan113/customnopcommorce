@@ -1,0 +1,9 @@
+﻿Group: Widgets
+FriendlyName: Banner Slider /w Position
+SystemName: Nop.Plugin.Widgets.SliderAndPosition
+Version: 0.9
+SupportedVersions: 3.90
+Author: LD
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.SliderAndPosition.dll
+Description: This plugin allows create slider anywhere

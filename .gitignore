@@ -40,3 +40,5 @@
 /Tests/Nop.Web.MVC.Tests/obj
 /Tests/Nop.Tests/obj
 /Tests/Nop.Data.Tests/obj
+/Plugins/Nop.Plugin.Widgets.SliderAndPosition/bin
+/Plugins/Nop.Plugin.Widgets.SliderAndPosition/obj
