@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web.Mvc;
 using Nop.Core.Domain.Common;
 using Nop.Core.Domain.Directory;
@@ -31,6 +32,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
         private readonly IPermissionService _permissionService;
         private readonly IStateProvinceService _stateProvinceService;
         private readonly ISliderAndPositionService _sliderAndPositionService;
+        private readonly ILDBannerService _lDBannerService;
         private readonly IStoreService _storeService;
         private readonly IPictureService _pictureService;
 
@@ -44,6 +46,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             IPermissionService permissionService,
             IStateProvinceService stateProvinceService,
             ISliderAndPositionService sliderAndPositionService,
+            ILDBannerService lDBannerService,
             IStoreService storeService,
             IPictureService pictureService)
         {
@@ -53,6 +56,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             this._permissionService = permissionService;
             this._stateProvinceService = stateProvinceService;
             this._sliderAndPositionService = sliderAndPositionService;
+            this._lDBannerService = lDBannerService;
             this._storeService = storeService;
             this._pictureService = pictureService;
         }
@@ -94,6 +98,42 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             });
         }
 
+        [HttpPost]
+        [AdminAntiForgery]
+        public ActionResult ListBannerByPositionId(DataSourceRequest command, int positionId)
+        {
+            if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
+                return ErrorForKendoGridJson("Access denied");
+
+            var pickupPoints = _lDBannerService.GetAllBannerByPositionId(positionId);
+            if (pickupPoints != null && pickupPoints.Any())
+            {
+                var model = pickupPoints.Select(x =>
+                {
+                    return new BannersModel
+                    {
+                        Id = x.Id,
+                        Title = x.Title,
+                        URL = x.URL,
+                        PictureId = x.PictureId,
+                        PictureUrl = x.PictureSrc,
+                    };
+                }).ToList();
+
+                return Json(new DataSourceResult
+                {
+                    Data = model,
+                    Total = pickupPoints.TotalCount
+                });
+            }
+
+            return Json(new DataSourceResult
+            {
+                Data = new List<BannersModel>(),
+                Total = 0
+            });
+        }
+
         public ActionResult Create()
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
@@ -114,12 +154,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             var dtoMd = new SliderAndPositionMd
             {
                 Name = model.Name,
-                Description = model.Description,
             };
-
-            var pic1url = _pictureService.GetPictureUrl(model.image_1_id);
-            dtoMd.image_1_id = model.image_1_id;
-            dtoMd.image_1_src = pic1url;
 
             _sliderAndPositionService.InsertSliderAndPosition(dtoMd);
 
@@ -139,14 +174,10 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             if (sliderAndPositionModel == null)
                 return RedirectToAction("Configure");
 
-            //var pic1 = _pictureService.GetPictureById(sliderAndPositionModel.image1);
             var model = new SliderAndPositionModel
             {
                 Id = sliderAndPositionModel.Id,
-                Name = sliderAndPositionModel.Name,
-                Description = sliderAndPositionModel.Description,
-                image_1_id = sliderAndPositionModel.image_1_id,
-                image_1_src = sliderAndPositionModel.image_1_src,
+                Name = sliderAndPositionModel.Name
             };
 
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Edit.cshtml", model);
@@ -162,10 +193,6 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             var sliderAndPositionModel = _sliderAndPositionService.GetSliderAndPositionById(model.Id);
             if (sliderAndPositionModel == null)
                 return RedirectToAction("Configure");
-
-            var pic1url = _pictureService.GetPictureUrl(model.image_1_id);
-            sliderAndPositionModel.image_1_id = model.image_1_id;
-            sliderAndPositionModel.image_1_src = pic1url;
 
             _sliderAndPositionService.UpdateSliderAndPosition(sliderAndPositionModel);
 
@@ -192,6 +219,29 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return new NullJsonResult();
         }
 
+        [HttpPost]
+        public ActionResult ProductPictureAdd(string btnId, string formId, BannersModel model)
+        {
+            if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
+                return Content("Access denied");
+
+            var dtoMd = new BannersMd
+            {
+                Title = model.Title,
+                URL = model.URL,
+                PictureId = model.PictureId,
+                PictureSrc = _pictureService.GetPictureUrl(model.PictureId),
+                PositionId = model.PositionId,
+            };
+
+            _lDBannerService.InsertLDBanner(dtoMd);
+
+            ViewBag.RefreshPage = true;
+            ViewBag.btnId = btnId;
+            ViewBag.formId = formId;
+
+            return Json(new { Result = true }, JsonRequestBehavior.AllowGet);
+        }
         #endregion
     }
 }

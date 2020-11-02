@@ -26,14 +26,21 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Infrastructure
         public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
         {
             builder.RegisterType<SliderAndPositionService>().As<ISliderAndPositionService>().InstancePerLifetimeScope();
+            builder.RegisterType<LDBannerService>().As<ILDBannerService>().InstancePerLifetimeScope();
 
             //data context
             this.RegisterPluginDataContext<SliderAndPositionObjectContext>(builder, "nop_object_context_slider_and_position");
+            this.RegisterPluginDataContext<BannersObjectContext>(builder, "nop_object_context_banners");
 
             //override required repository with our custom context
             builder.RegisterType<EfRepository<SliderAndPositionMd>>()
                 .As<IRepository<SliderAndPositionMd>>()
                 .WithParameter(ResolvedParameter.ForNamed<IDbContext>("nop_object_context_slider_and_position"))
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<EfRepository<BannersMd>>()
+                .As<IRepository<BannersMd>>()
+                .WithParameter(ResolvedParameter.ForNamed<IDbContext>("nop_object_context_banners"))
                 .InstancePerLifetimeScope();
         }
 

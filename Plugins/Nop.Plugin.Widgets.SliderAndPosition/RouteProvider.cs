@@ -25,6 +25,12 @@ namespace Nop.Plugin.Widgets.SliderAndPosition
                  new { controller = "SliderAndPosition", action = "Delete" },
                  new[] { "Nop.Plugin.Widgets.SliderAndPosition.Controllers" }
             );
+
+            routes.MapRoute("Plugin.Widgets.SliderAndPosition.ListBannerBy",
+                 "Plugins/SliderAndPosition/ListBannerByPositionId",
+                 new { controller = "SliderAndPosition", action = "ListBannerByPositionId" },
+                 new[] { "Nop.Plugin.Widgets.SliderAndPosition.Controllers" }
+            );
         }
         public int Priority
         {

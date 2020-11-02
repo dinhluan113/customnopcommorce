@@ -11,11 +11,11 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Data
     /// <summary>
     /// Object context
     /// </summary>
-    public class SliderAndPositionObjectContext : DbContext, IDbContext
+    public class BannersObjectContext : DbContext, IDbContext
     {
         #region Ctor
 
-        public SliderAndPositionObjectContext(string nameOrConnectionString) : base(nameOrConnectionString)
+        public BannersObjectContext(string nameOrConnectionString) : base(nameOrConnectionString)
         {
             //((IObjectContextAdapter) this).ObjectContext.ContextOptions.LazyLoadingEnabled = true;
         }
@@ -53,7 +53,6 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new BannersMap());
-            modelBuilder.Configurations.Add(new SliderAndPositionMap());
 
             //disable EdmMetadata generation
             //modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
@@ -101,7 +100,6 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Data
         {
             //drop the table
             this.DropPluginTable(this.GetTableName<BannersMd>());
-            this.DropPluginTable(this.GetTableName<SliderAndPositionMd>());
         }
 
         /// <summary>
