@@ -117,6 +117,10 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
                 Description = model.Description,
             };
 
+            var pic1url = _pictureService.GetPictureUrl(model.image_1_id);
+            dtoMd.image_1_id = model.image_1_id;
+            dtoMd.image_1_src = pic1url;
+
             _sliderAndPositionService.InsertSliderAndPosition(dtoMd);
 
             ViewBag.RefreshPage = true;
@@ -141,7 +145,8 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
                 Id = sliderAndPositionModel.Id,
                 Name = sliderAndPositionModel.Name,
                 Description = sliderAndPositionModel.Description,
-                //image1 = sliderAndPositionModel.image1,
+                image_1_id = sliderAndPositionModel.image_1_id,
+                image_1_src = sliderAndPositionModel.image_1_src,
             };
 
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Edit.cshtml", model);
@@ -158,9 +163,9 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             if (sliderAndPositionModel == null)
                 return RedirectToAction("Configure");
 
-            var pic1 = _pictureService.GetPictureById(model.image_1_id);
+            var pic1url = _pictureService.GetPictureUrl(model.image_1_id);
             sliderAndPositionModel.image_1_id = model.image_1_id;
-            sliderAndPositionModel.image_1_src = pic1.AltAttribute;
+            sliderAndPositionModel.image_1_src = pic1url;
 
             _sliderAndPositionService.UpdateSliderAndPosition(sliderAndPositionModel);
 
