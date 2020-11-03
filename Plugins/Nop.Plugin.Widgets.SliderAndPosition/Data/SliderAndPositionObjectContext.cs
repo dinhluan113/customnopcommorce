@@ -52,6 +52,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Data
         /// <param name="modelBuilder">The builder that defines the model for the context being created</param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new BannersMap());
             modelBuilder.Configurations.Add(new SliderAndPositionMap());
 
             //disable EdmMetadata generation
@@ -100,6 +101,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Data
         {
             //drop the table
             this.DropPluginTable(this.GetTableName<SliderAndPositionMd>());
+            this.DropPluginTable(this.GetTableName<BannersMd>());
         }
 
         /// <summary>

@@ -18,4 +18,3 @@ Tax.FixedOrByCountryStateZip
 Widgets.GoogleAnalytics
 Widgets.NivoSlider
 Pickup.PickupInStore
-Nop.Plugin.Widgets.SliderAndPosition
