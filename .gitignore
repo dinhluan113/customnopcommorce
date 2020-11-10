@@ -1,3 +1,5 @@
+*.jpeg
+*.zip
 /packages
 /Presentation/Nop.Web/obj/*
 /Presentation/Nop.Web/bin/*
