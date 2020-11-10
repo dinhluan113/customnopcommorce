@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=112.78.2.42,1433;Initial Catalog=lan76064_admin;Integrated Security=False;Persist Security Info=False;User ID=lan76064_dtb;Password=Matkhau123!

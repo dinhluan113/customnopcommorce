@@ -14,14 +14,24 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Models
             URL = "";
         }
         public int PositionId { get; set; }
+
+        [NopResourceDisplayName("plugins.bannerandslider.banner.fields.displayorder")]
         public int DisplayOrder { get; set; }
+
+        [NopResourceDisplayName("plugins.bannerandslider.banner.fields.title")]
         public string Title { get; set; }
+
+        [NopResourceDisplayName("plugins.bannerandslider.banner.fields.description")]
         public string Description { get; set; }
+
+        [NopResourceDisplayName("plugins.bannerandslider.banner.fields.url")]
         public string URL { get; set; }
 
         [System.ComponentModel.DataAnnotations.UIHint("Picture")]
         [NopResourceDisplayName("Admin.Catalog.Categories.Fields.Picture")]
         public int PictureId { get; set; }
+
+        [NopResourceDisplayName("plugins.bannerandslider.banner.fields.pictureurl")]
         public string PictureUrl { get; set; }
     }
 }

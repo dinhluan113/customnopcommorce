@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=DESKTOP-C9D5N0B;Initial Catalog=nopnop;Integrated Security=True;Persist Security Info=False

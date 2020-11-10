@@ -3650,7 +3650,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/06/2016 17:11:18</publishTime>
     </File>
     <File Include="Administration/sitemap.config">
-      <publishTime>11/03/2020 13:27:13</publishTime>
+      <publishTime>11/10/2020 12:20:23</publishTime>
     </File>
     <File Include="Administration/Views/ActivityLog/ListLogs.cshtml">
       <publishTime>03/14/2017 18:09:14</publishTime>
@@ -5000,10 +5000,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/14/2017 18:09:22</publishTime>
     </File>
     <File Include="bin/Nop.Admin.dll">
-      <publishTime>10/29/2020 16:04:22</publishTime>
+      <publishTime>11/10/2020 13:40:41</publishTime>
     </File>
     <File Include="bin/Nop.Admin.pdb">
-      <publishTime>10/29/2020 16:04:22</publishTime>
+      <publishTime>11/10/2020 13:40:41</publishTime>
     </File>
     <File Include="bin/Nop.Core.dll">
       <publishTime>10/29/2020 11:02:11</publishTime>
@@ -5015,40 +5015,40 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/29/2020 11:02:11</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll">
-      <publishTime>11/03/2020 12:55:57</publishTime>
+      <publishTime>11/10/2020 12:24:20</publishTime>
     </File>
     <File Include="bin/Nop.Data.dll.config">
       <publishTime>10/22/2020 14:12:40</publishTime>
     </File>
     <File Include="bin/Nop.Data.pdb">
-      <publishTime>11/03/2020 12:55:57</publishTime>
+      <publishTime>11/10/2020 12:24:20</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll">
-      <publishTime>11/03/2020 12:56:02</publishTime>
+      <publishTime>11/10/2020 12:24:24</publishTime>
     </File>
     <File Include="bin/Nop.Services.dll.config">
-      <publishTime>11/03/2020 12:55:57</publishTime>
+      <publishTime>11/10/2020 12:24:21</publishTime>
     </File>
     <File Include="bin/Nop.Services.pdb">
-      <publishTime>11/03/2020 12:56:02</publishTime>
+      <publishTime>11/10/2020 12:24:24</publishTime>
     </File>
     <File Include="bin/Nop.Services.XmlSerializers.dll">
-      <publishTime>11/03/2020 12:56:07</publishTime>
+      <publishTime>11/10/2020 12:24:27</publishTime>
     </File>
     <File Include="bin/Nop.Web.dll">
-      <publishTime>11/03/2020 13:55:46</publishTime>
+      <publishTime>11/10/2020 13:41:49</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll">
-      <publishTime>11/03/2020 12:56:09</publishTime>
+      <publishTime>11/10/2020 12:24:29</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.dll.config">
-      <publishTime>11/03/2020 12:56:08</publishTime>
+      <publishTime>11/10/2020 12:24:28</publishTime>
     </File>
     <File Include="bin/Nop.Web.Framework.pdb">
-      <publishTime>11/03/2020 12:56:09</publishTime>
+      <publishTime>11/10/2020 12:24:29</publishTime>
     </File>
     <File Include="bin/Nop.Web.pdb">
-      <publishTime>11/03/2020 13:55:46</publishTime>
+      <publishTime>11/10/2020 13:41:49</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>12/06/2016 17:09:53</publishTime>
@@ -6650,16 +6650,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:19</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll">
-      <publishTime>11/02/2020 10:55:48</publishTime>
+      <publishTime>11/10/2020 13:40:44</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.dll.config">
       <publishTime>10/28/2020 11:06:09</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.pdb">
-      <publishTime>11/02/2020 10:55:48</publishTime>
+      <publishTime>11/10/2020 13:40:44</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Api.XML">
-      <publishTime>11/02/2020 10:55:48</publishTime>
+      <publishTime>11/10/2020 13:40:43</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Widgets.SliderAndPosition.dll">
+      <publishTime>11/10/2020 12:53:48</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Widgets.SliderAndPosition.dll.config">
+      <publishTime>11/02/2020 15:02:58</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Nop.Plugin.Widgets.SliderAndPosition.pdb">
+      <publishTime>11/10/2020 12:53:48</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/Swashbuckle.Core.dll">
       <publishTime>07/08/2017 01:30:56</publishTime>
@@ -6706,8 +6715,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Plugins/Nop.Plugin.Api/Views/Clients/List.cshtml">
       <publishTime>10/22/2020 13:27:26</publishTime>
     </File>
+    <File Include="Plugins/Nop.Plugin.Api/Views/Configure.cshtml">
+      <publishTime>11/03/2020 12:46:00</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Views/Create.cshtml">
+      <publishTime>11/03/2020 13:51:00</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Views/Edit.cshtml">
+      <publishTime>11/03/2020 13:51:05</publishTime>
+    </File>
     <File Include="Plugins/Nop.Plugin.Api/Views/Settings.cshtml">
       <publishTime>10/22/2020 13:27:26</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Views/_CreateOrUpdate.cshtml">
+      <publishTime>11/03/2020 09:05:01</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Api/Views/_CreateOrUpdate.Pictures.cshtml">
+      <publishTime>11/10/2020 12:23:26</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Api/web.config">
       <publishTime>10/22/2020 13:27:26</publishTime>
@@ -6950,49 +6974,52 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/14/2017 18:09:22</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Core.dll">
-      <publishTime>11/03/2020 13:41:21</publishTime>
+      <publishTime>11/10/2020 12:23:48</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Core.dll.config">
       <publishTime>10/22/2020 14:12:34</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Core.pdb">
-      <publishTime>11/03/2020 13:41:21</publishTime>
+      <publishTime>11/10/2020 12:23:48</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Data.dll">
-      <publishTime>11/03/2020 13:41:23</publishTime>
+      <publishTime>11/10/2020 12:23:49</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Data.dll.config">
       <publishTime>10/22/2020 14:12:40</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Data.pdb">
-      <publishTime>11/03/2020 13:41:23</publishTime>
+      <publishTime>11/10/2020 12:23:49</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Plugin.Widgets.SliderAndPosition.dll">
-      <publishTime>11/03/2020 13:55:04</publishTime>
+      <publishTime>11/10/2020 12:53:48</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Plugin.Widgets.SliderAndPosition.dll.config">
       <publishTime>11/02/2020 15:02:58</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Plugin.Widgets.SliderAndPosition.pdb">
-      <publishTime>11/03/2020 13:55:04</publishTime>
+      <publishTime>11/10/2020 12:53:48</publishTime>
+    </File>
+    <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Plugin.Widgets.SliderAndPosition.zip">
+      <publishTime>11/10/2020 12:25:32</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Services.dll">
-      <publishTime>11/03/2020 13:41:27</publishTime>
+      <publishTime>11/10/2020 12:23:54</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Services.dll.config">
-      <publishTime>11/03/2020 13:41:23</publishTime>
+      <publishTime>11/10/2020 12:23:50</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Services.pdb">
-      <publishTime>11/03/2020 13:41:27</publishTime>
+      <publishTime>11/10/2020 12:23:54</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Web.Framework.dll">
-      <publishTime>11/03/2020 13:41:31</publishTime>
+      <publishTime>11/10/2020 12:23:57</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Web.Framework.dll.config">
-      <publishTime>11/03/2020 13:41:30</publishTime>
+      <publishTime>11/10/2020 12:23:55</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Nop.Web.Framework.pdb">
-      <publishTime>11/03/2020 13:41:31</publishTime>
+      <publishTime>11/10/2020 12:23:57</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/pl/FluentValidation.resources.dll">
       <publishTime>03/14/2017 18:09:22</publishTime>
@@ -7097,7 +7124,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/03/2020 09:05:02</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/_CreateOrUpdate.Pictures.cshtml">
-      <publishTime>11/03/2020 13:54:00</publishTime>
+      <publishTime>11/10/2020 12:23:26</publishTime>
     </File>
     <File Include="Plugins/Nop.Plugin.Widgets.SliderAndPosition/Web.config">
       <publishTime>11/02/2020 16:46:50</publishTime>
@@ -8429,7 +8456,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/10/2015 19:24:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/03/2020 13:55:52</publishTime>
+      <publishTime>11/10/2020 13:41:57</publishTime>
     </File>
   </ItemGroup>
 </Project>
