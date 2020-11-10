@@ -21,7 +21,6 @@ using Nop.Web.Framework.Security;
 
 namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
 {
-    [AdminAuthorize]
     public class SliderAndPositionController : BasePluginController
     {
         #region Fields
@@ -65,6 +64,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
 
         #region Methods
 
+        [AdminAuthorize]
         //[ChildActionOnly]
         public ActionResult Configure()
         {
@@ -74,6 +74,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Configure.cshtml");
         }
 
+        [AdminAuthorize]
         [HttpPost]
         [AdminAntiForgery]
         public ActionResult List(DataSourceRequest command)
@@ -98,6 +99,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             });
         }
 
+        [AdminAuthorize]
         [HttpPost]
         [AdminAntiForgery]
         public ActionResult ListBannerByPositionId(DataSourceRequest command, int positionId)
@@ -136,6 +138,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             });
         }
 
+        [AdminAuthorize]
         public ActionResult Create()
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
@@ -146,6 +149,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Create.cshtml", model);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         [AdminAntiForgery]
         public ActionResult Create(string btnId, string formId, SliderAndPositionModel model)
@@ -167,6 +171,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return RedirectToAction("Configure");
         }
 
+        [AdminAuthorize]
         public ActionResult Edit(int id)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
@@ -185,6 +190,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Edit.cshtml", model);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         [AdminAntiForgery]
         public ActionResult Edit(string btnId, string formId, SliderAndPositionModel model)
@@ -206,6 +212,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return View("~/Plugins/Nop.Plugin.Widgets.SliderAndPosition/Views/Edit.cshtml", model);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         [AdminAntiForgery]
         public ActionResult Delete(int id)
@@ -222,6 +229,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return Json(new { Result = true }, JsonRequestBehavior.AllowGet);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         public ActionResult ProductPictureAdd(string btnId, string formId, BannersModel model)
         {
@@ -248,6 +256,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return Json(new { Result = true }, JsonRequestBehavior.AllowGet);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         public ActionResult PictureUpdate(string btnId, string formId, BannersModel model)
         {
@@ -275,6 +284,7 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
             return Json(new { Result = true }, JsonRequestBehavior.AllowGet);
         }
 
+        [AdminAuthorize]
         [HttpPost]
         public ActionResult PictureDelete(string btnId, string formId, BannersModel model)
         {
@@ -290,6 +300,17 @@ namespace Nop.Plugin.Widgets.SliderAndPosition.Controllers
 
             return Json(new { Result = true }, JsonRequestBehavior.AllowGet);
         }
+
+        [HttpGet]
+        public ActionResult GetBannerByPosId(int id)
+        {
+            var sliderAndPositionModel = _lDBannerService.GetAllBannerByPositionId(id);
+            if (sliderAndPositionModel == null)
+                return Json(new { Result = false }, JsonRequestBehavior.AllowGet);
+            var rs = Json(sliderAndPositionModel, JsonRequestBehavior.AllowGet);
+            return rs;
+        }
+
         #endregion
     }
 }

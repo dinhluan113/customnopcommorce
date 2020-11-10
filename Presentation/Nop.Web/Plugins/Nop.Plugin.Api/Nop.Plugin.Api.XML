@@ -20,13 +20,6 @@
             <response code="200">OK</response>
             <response code="401">Unauthorized</response>
         </member>
-        <member name="M:Nop.Plugin.Api.Controllers.BannersController.GetBannerById(System.Int32,System.String)">
-            <summary>
-            Retrieve all Banner by id
-            </summary>
-            <param name="id">size: 16</param>
-            <param name="fields">Fields from the product you want your json to contain</param>
-        </member>
         <member name="M:Nop.Plugin.Api.Controllers.NewsLetterSubscriptionController.GetNewsLetterSubscriptions(Nop.Plugin.Api.Models.CustomersParameters.NewsLetterSubscriptionsParametersModel)">
             <summary>
             Receive a list of all NewsLetterSubscriptions
@@ -339,41 +332,6 @@
             <response code="400">Bad Request</response>
             <response code="404">Not Found</response>
             <response code="401">Unauthorized</response>
-        </member>
-        <member name="P:Nop.Plugin.Api.Domain.Banners.Title">
-            <summary>
-            Gets or sets a name
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.Id">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.PositionId">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.Title">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.Description">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.URL">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Banners.BannersDto.PictureUrl">
-            <summary>
-            
-            </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Id">
             <summary>
@@ -2313,21 +2271,6 @@
         <member name="M:Nop.Plugin.Api.Services.CustomerApiService.GetFullCustomerDtos(System.Linq.IQueryable{System.Linq.IGrouping{System.Int32,Nop.Plugin.Api.DTOs.Customers.CustomerAttributeMappingDto}},System.Int32,System.Int32,System.String)">
             <summary>
             This method is responsible for getting customer dto records with first and last names set from the attribute mappings.
-            </summary>
-        </member>
-        <member name="T:Nop.Plugin.Api.Services.ILDBannerService">
-            <summary>
-            Store pickup point service interface
-            </summary>
-        </member>
-        <member name="T:Nop.Plugin.Api.Services.LDBannerService">
-            <summary>
-            Store pickup point service
-            </summary>
-        </member>
-        <member name="M:Nop.Plugin.Api.Services.LDBannerService.#ctor(Nop.Core.Caching.ICacheManager,Nop.Core.Data.IRepository{Nop.Plugin.Api.Domain.Banners})">
-            <summary>
-            Ctor
             </summary>
         </member>
         <member name="M:Nop.Plugin.Api.WebHooks.ApiWebHookSender.CreateWebHookRequestBody(Microsoft.AspNet.WebHooks.WebHookWorkItem)">
