@@ -27,28 +27,27 @@ using Nop.Services.Localization;
 using Nop.Services.Logging;
 using Nop.Services.Media;
 using Nop.Services.Security;
-using Nop.Services.Seo;
 using Nop.Services.Stores;
 using Nop.Plugin.Api.Helpers;
-using Nop.Services.Blogs;
 using Nop.Plugin.Api.DTOs.Blogs;
 using Nop.Services.News;
 using Nop.Plugin.Api.DTOs.News;
+using Nop.Services.Topics;
 
 namespace Nop.Plugin.Api.Controllers
 {
     public class NewsController : BaseApiController
     {
-        private readonly IUrlRecordService _urlRecordService;
         private readonly INewsService _newsService;
+        private readonly ITopicService _topicRepository;
         private readonly IFactory<Product> _factory;
         private readonly IDTOHelper _dtoHelper;
 
         public NewsController(IJsonFieldsSerializer jsonFieldsSerializer,
                                   INewsService newsService,
-                                  IUrlRecordService urlRecordService,
                                   ICustomerActivityService customerActivityService,
                                   ILocalizationService localizationService,
+                                  ITopicService topicRepository,
                                   IFactory<Product> factory,
                                   IAclService aclService,
                                   IStoreMappingService storeMappingService,
@@ -59,7 +58,7 @@ namespace Nop.Plugin.Api.Controllers
                                   IDTOHelper dtoHelper) : base(jsonFieldsSerializer, aclService, customerService, storeMappingService, storeService, discountService, customerActivityService, localizationService, pictureService)
         {
             _factory = factory;
-            _urlRecordService = urlRecordService;
+            _topicRepository = topicRepository;
             _newsService = newsService;
             _dtoHelper = dtoHelper;
         }
@@ -139,6 +138,32 @@ namespace Nop.Plugin.Api.Controllers
             {
                 News = newsAsDtos,
                 RelatedNews = RelatedNews
+            };
+
+            var json = _jsonFieldsSerializer.Serialize(newsRootObject, fields);
+
+            return new RawJsonActionResult(json);
+        }
+
+        [HttpGet]
+        public IHttpActionResult GetTopicById(int id, string fields = "")
+        {
+            var news = _topicRepository.GetTopicById(id);
+
+            if (news == null)
+            {
+                return Error(HttpStatusCode.NotFound, "news", "not found");
+            }
+            var topicDto = new TopicDto()
+            {
+                Id = news.Id,
+                Title = news.Title,
+                Body = news.Body,
+            };
+
+            var newsRootObject = new TopicRootObjectDto()
+            {
+                Topic = topicDto
             };
 
             var json = _jsonFieldsSerializer.Serialize(newsRootObject, fields);

@@ -79,7 +79,7 @@
                             @Html.ValidationMessageFor(model => model.Locales[item].Name)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.Locales[item].Description)
                         </div>
@@ -101,7 +101,7 @@
                             @Html.ValidationMessageFor(model => model.Name)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.Description)
                         </div>
@@ -140,67 +140,68 @@
                         @Html.ValidationMessageFor(model => model.ParentCategoryId)
                     </div>
                 </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.PriceRanges)
+                <div style="opacity:0;height:0;overflow:hidden">
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.PriceRanges)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.PriceRanges)
+                            @Html.ValidationMessageFor(model => model.PriceRanges)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.PriceRanges)
-                        @Html.ValidationMessageFor(model => model.PriceRanges)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.ShowOnHomePage)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.ShowOnHomePage)
+                            @Html.ValidationMessageFor(model => model.ShowOnHomePage)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.ShowOnHomePage)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInTopMenu)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInTopMenu)
+                            @Html.ValidationMessageFor(model => model.IncludeInTopMenu)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.ShowOnHomePage)
-                        @Html.ValidationMessageFor(model => model.ShowOnHomePage)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.AllowCustomersToSelectPageSize)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.AllowCustomersToSelectPageSize)
+                            @Html.ValidationMessageFor(model => model.AllowCustomersToSelectPageSize)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInTopMenu)
+                    <div id="pnlPageSize" class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.PageSize)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.PageSize)
+                            @Html.ValidationMessageFor(model => model.PageSize)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInTopMenu)
-                        @Html.ValidationMessageFor(model => model.IncludeInTopMenu)
+                    <div id="pnlPageSizeOptions" class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.PageSizeOptions)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.PageSizeOptions)
+                            @Html.ValidationMessageFor(model => model.PageSizeOptions)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.AllowCustomersToSelectPageSize)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.AllowCustomersToSelectPageSize)
-                        @Html.ValidationMessageFor(model => model.AllowCustomersToSelectPageSize)
-                    </div>
-                </div>
-                <div id="pnlPageSize" class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.PageSize)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.PageSize)
-                        @Html.ValidationMessageFor(model => model.PageSize)
-                    </div>
-                </div>
-                <div id="pnlPageSizeOptions" class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.PageSizeOptions)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.PageSizeOptions)
-                        @Html.ValidationMessageFor(model => model.PageSizeOptions)
-                    </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.SelectedDiscountIds)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.EditorFor(model => model.SelectedDiscountIds, new { SelectList = Model.AvailableDiscounts })
-                        <script>
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.SelectedDiscountIds)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.EditorFor(model => model.SelectedDiscountIds, new { SelectList = Model.AvailableDiscounts })
+                            <script>
                             $(document).ready(function() {
                                 var discountsIdsInput = $('#@Html.FieldIdFor(model => model.SelectedDiscountIds)').data("kendoMultiSelect");
                                 discountsIdsInput.setOptions({
@@ -219,18 +220,18 @@
                                 </text>
                                 }
                             });
-                        </script>
+                            </script>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.SelectedCustomerRoleIds)
-                    </div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-4">
-                                @Html.EditorFor(model => model.SelectedCustomerRoleIds, new { SelectList = Model.AvailableCustomerRoles })
-                                <script>
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.SelectedCustomerRoleIds)
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.SelectedCustomerRoleIds, new { SelectList = Model.AvailableCustomerRoles })
+                                    <script>
                                     $(document).ready(function() {
                                         var rolesIdsInput = $('#@Html.FieldIdFor(model => model.SelectedCustomerRoleIds)').data("kendoMultiSelect");
                                         rolesIdsInput.setOptions({
@@ -249,23 +250,23 @@
                                     </text>
                                         }
                                     });
-                                </script>
-                            </div>
-                            <div class="col-md-8">
-                                @Html.Action("AclDisabledWarning", "Common")
+                                    </script>
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.Action("AclDisabledWarning", "Common")
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.SelectedStoreIds)
-                    </div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-4">
-                                @Html.EditorFor(model => model.SelectedStoreIds, new { SelectList = Model.AvailableStores })
-                                <script>
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.SelectedStoreIds)
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.SelectedStoreIds, new { SelectList = Model.AvailableStores })
+                                    <script>
                                 $(document).ready(function() {
                                     var storesIdsInput = $('#@Html.FieldIdFor(model => model.SelectedStoreIds)').data("kendoMultiSelect");
                                     storesIdsInput.setOptions({
@@ -284,30 +285,31 @@
                                     </text>
                                     }
                                 });
-                                </script>
-                            </div>
-                            <div class="col-md-8">
-                                @Html.Action("MultistoreDisabledWarning", "Common")
+                                    </script>
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.Action("MultistoreDisabledWarning", "Common")
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.Published)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.Published)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.Published)
+                            @Html.ValidationMessageFor(model => model.Published)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.Published)
-                        @Html.ValidationMessageFor(model => model.Published)
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.DisplayOrder)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(model => model.DisplayOrder)
-                        @Html.ValidationMessageFor(model => model.DisplayOrder)
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.DisplayOrder)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(model => model.DisplayOrder)
+                            @Html.ValidationMessageFor(model => model.DisplayOrder)
+                        </div>
                     </div>
                 </div>
             </div>
@@ -331,7 +333,7 @@
                             @Html.ValidationMessageFor(model => model.Locales[item].MetaKeywords)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.Locales[item].MetaDescription)
                         </div>
@@ -349,7 +351,7 @@
                             @Html.ValidationMessageFor(model => model.Locales[item].MetaTitle)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.Locales[item].SeName)
                         </div>
@@ -383,7 +385,7 @@
                             @Html.ValidationMessageFor(model => model.MetaKeywords)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.MetaDescription)
                         </div>
@@ -401,7 +403,7 @@
                             @Html.ValidationMessageFor(model => model.MetaTitle)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.SeName)
                         </div>

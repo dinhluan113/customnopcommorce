@@ -152,7 +152,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
@@ -245,6 +244,8 @@
     <Compile Include="Controllers\OrderItemsController.cs" />
     <Compile Include="Controllers\ProductAttributesController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="DTOs\News\TopicRootObjectDto.cs" />
+    <Compile Include="DTOs\News\TopicDto.cs" />
     <Compile Include="DTOs\News\NewsDto.cs" />
     <Compile Include="DTOs\News\NewsRootObjectDto.cs" />
     <Compile Include="DTOs\CustomerRoles\CustomerRoleDto.cs" />

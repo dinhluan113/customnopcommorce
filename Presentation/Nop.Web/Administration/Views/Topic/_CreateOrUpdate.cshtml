@@ -117,98 +117,99 @@
                         @Html.ValidationMessageFor(model => model.SystemName)
                     </div>
                 </div>
-                @if (Model.Id > 0)
-                {
-                    <div class="form-group">
+                <div style="opacity:0;height:0;overflow:hidden">
+                    @if (Model.Id > 0)
+                    {
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.Url)
+                            </div>
+                            <div class="col-md-9">
+                                <a href="@Model.Url"> @Model.Url </a>
+                            </div>
+                        </div>
+                    }
+                    <div class="form-group advanced-setting">
                         <div class="col-md-3">
-                            @Html.NopLabelFor(model => model.Url)
+                            @Html.NopLabelFor(model => model.Published)
                         </div>
                         <div class="col-md-9">
-                            <a href="@Model.Url"> @Model.Url </a>
+                            @Html.NopEditorFor(model => model.Published)
+                            @Html.ValidationMessageFor(model => model.Published)
                         </div>
                     </div>
-                }
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.Published)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IsPasswordProtected)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(model => model.IsPasswordProtected)
+                            @Html.ValidationMessageFor(model => model.IsPasswordProtected)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(model => model.Published)
-                        @Html.ValidationMessageFor(model => model.Published)
+                    <div class="form-group advanced-setting" id="pnlPasswordEnabled">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.Password)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(model => model.Password)
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IsPasswordProtected)
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInTopMenu)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInTopMenu)
+                            @Html.ValidationMessageFor(model => model.IncludeInTopMenu)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(model => model.IsPasswordProtected)
-                        @Html.ValidationMessageFor(model => model.IsPasswordProtected)
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInFooterColumn1)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInFooterColumn1)
+                            @Html.ValidationMessageFor(model => model.IncludeInFooterColumn1)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting" id="pnlPasswordEnabled">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.Password)
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInFooterColumn2)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInFooterColumn2)
+                            @Html.ValidationMessageFor(model => model.IncludeInFooterColumn2)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(model => model.Password)
-                        @Html.ValidationMessageFor(model => model.Password)
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInFooterColumn3)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInFooterColumn3)
+                            @Html.ValidationMessageFor(model => model.IncludeInFooterColumn3)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInTopMenu)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.IncludeInSitemap)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.IncludeInSitemap)
+                            @Html.ValidationMessageFor(model => model.IncludeInSitemap)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInTopMenu)
-                        @Html.ValidationMessageFor(model => model.IncludeInTopMenu)
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInFooterColumn1)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInFooterColumn1)
-                        @Html.ValidationMessageFor(model => model.IncludeInFooterColumn1)
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInFooterColumn2)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInFooterColumn2)
-                        @Html.ValidationMessageFor(model => model.IncludeInFooterColumn2)
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInFooterColumn3)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInFooterColumn3)
-                        @Html.ValidationMessageFor(model => model.IncludeInFooterColumn3)
-                    </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.IncludeInSitemap)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.IncludeInSitemap)
-                        @Html.ValidationMessageFor(model => model.IncludeInSitemap)
-                    </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.SelectedCustomerRoleIds)
-                    </div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-4">
-                                @Html.EditorFor(model => model.SelectedCustomerRoleIds, new {SelectList = Model.AvailableCustomerRoles})
-                                <script>
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.SelectedCustomerRoleIds)
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.SelectedCustomerRoleIds, new { SelectList = Model.AvailableCustomerRoles })
+                                    <script>
                                     $(document).ready(function() {
                                         var rolesIdsInput = $('#@Html.FieldIdFor(model => model.SelectedCustomerRoleIds)').data("kendoMultiSelect");
                                         rolesIdsInput.setOptions({
@@ -227,23 +228,23 @@
                                 </text>
                                         }
                                     });
-                                </script>
-                            </div>
-                            <div class="col-md-8">
-                                @Html.Action("AclDisabledWarning", "Common")
+                                    </script>
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.Action("AclDisabledWarning", "Common")
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.SelectedStoreIds)
-                    </div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-4">
-                                @Html.EditorFor(model => model.SelectedStoreIds, new {SelectList = Model.AvailableStores})
-                                <script>
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.SelectedStoreIds)
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @Html.EditorFor(model => model.SelectedStoreIds, new { SelectList = Model.AvailableStores })
+                                    <script>
                                     $(document).ready(function() {
                                         var storesIdsInput = $('#@Html.FieldIdFor(model => model.SelectedStoreIds)').data("kendoMultiSelect");
                                         storesIdsInput.setOptions({
@@ -262,39 +263,40 @@
                                     </text>
                                         }
                                     });
-                                </script>
-                            </div>
-                            <div class="col-md-8">
-                                @Html.Action("MultistoreDisabledWarning", "Common")
+                                    </script>
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.Action("MultistoreDisabledWarning", "Common")
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.DisplayOrder)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.DisplayOrder)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.DisplayOrder)
+                            @Html.ValidationMessageFor(model => model.DisplayOrder)
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.DisplayOrder)
-                        @Html.ValidationMessageFor(model => model.DisplayOrder)
+                    <div class="form-group advanced-setting">
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.AccessibleWhenStoreClosed)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopEditorFor(x => x.AccessibleWhenStoreClosed)
+                            @Html.ValidationMessageFor(model => model.AccessibleWhenStoreClosed)
+                        </div>
                     </div>
-                </div>
-                <div class="form-group advanced-setting">
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.AccessibleWhenStoreClosed)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopEditorFor(x => x.AccessibleWhenStoreClosed)
-                        @Html.ValidationMessageFor(model => model.AccessibleWhenStoreClosed)
-                    </div>
-                </div>
-                <div class="form-group advanced-setting" @(Model.AvailableTopicTemplates.SelectionIsNotPossible() ? Html.Raw("style=\"display:none\"") : null)>
-                    <div class="col-md-3">
-                        @Html.NopLabelFor(model => model.TopicTemplateId)
-                    </div>
-                    <div class="col-md-9">
-                        @Html.NopDropDownListFor(model => model.TopicTemplateId, Model.AvailableTopicTemplates)
-                        @Html.ValidationMessageFor(model => model.TopicTemplateId)
+                    <div class="form-group advanced-setting" @(Model.AvailableTopicTemplates.SelectionIsNotPossible() ? Html.Raw("style=\"display:none\"") : null)>
+                        <div class="col-md-3">
+                            @Html.NopLabelFor(model => model.TopicTemplateId)
+                        </div>
+                        <div class="col-md-9">
+                            @Html.NopDropDownListFor(model => model.TopicTemplateId, Model.AvailableTopicTemplates)
+                            @Html.ValidationMessageFor(model => model.TopicTemplateId)
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,7 +338,7 @@
                             @Html.ValidationMessageFor(model => model.Locales[item].MetaTitle)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.Locales[item].SeName)
                         </div>
@@ -388,7 +390,7 @@
                             @Html.ValidationMessageFor(model => model.MetaTitle)
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="opacity:0;height:0;overflow:hidden">
                         <div class="col-md-3">
                             @Html.NopLabelFor(model => model.SeName)
                         </div>

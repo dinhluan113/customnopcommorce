@@ -333,6 +333,26 @@
             <response code="404">Not Found</response>
             <response code="401">Unauthorized</response>
         </member>
+        <member name="P:Nop.Plugin.Api.DTOs.Blogs.NewsRootObjectDto.RelatedNews">
+            <summary>
+            Gets or sets the date and time of entity creation
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.TopicDto.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.TopicDto.Title">
+            <summary>
+            Gets or sets the news title
+            </summary>
+        </member>
+        <member name="P:Nop.Plugin.Api.DTOs.News.TopicDto.Body">
+            <summary>
+            Gets or sets the blog post body
+            </summary>
+        </member>
         <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Id">
             <summary>
             
@@ -384,11 +404,6 @@
             </summary>
         </member>
         <member name="P:Nop.Plugin.Api.DTOs.News.NewsDto.Thumb">
-            <summary>
-            Gets or sets the date and time of entity creation
-            </summary>
-        </member>
-        <member name="P:Nop.Plugin.Api.DTOs.Blogs.NewsRootObjectDto.RelatedNews">
             <summary>
             Gets or sets the date and time of entity creation
             </summary>

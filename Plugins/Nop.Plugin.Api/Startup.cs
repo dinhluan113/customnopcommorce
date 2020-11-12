@@ -473,6 +473,12 @@ namespace Nop.Plugin.Api
                routeTemplate: "api/news/{id}",
                defaults: new { controller = "News", action = "GetNewsById" },
                constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
+
+            config.Routes.MapHttpRoute(
+               name: "getTopicById",
+               routeTemplate: "api/topic/{id}",
+               defaults: new { controller = "News", action = "GetTopicById" },
+               constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) });
             #endregion route
 
             // The default route templates for the Swagger docs and swagger-ui are "swagger/docs/{apiVersion}" and "swagger/ui/index#/{assetPath}" respectively.
